@@ -1,3 +1,5 @@
+package data;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -18,9 +20,6 @@ final public class Party {
 
     @Override
     public boolean equals(Object o) {
-        
-       // provant el github (MIQUEL)
-                
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Party party1 = (Party) o;
