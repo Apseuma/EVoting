@@ -9,27 +9,26 @@ package data;
  *
  * @author Albert Planes
  */
-public class MailAdress {
-    private final String adress;
+public class DigitalSignature {
+    private final String signature;
     
-    public MailAdress(String adress) { this.adress = adress; };
+    public DigitalSignature(String signature) { this.signature = signature; };
     
-    public String getAdress() { return adress; };
+    public String getSignature() { return signature; };
     
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        MailAdress mailAdress1 = (MailAdress) o;
-        return adress.equals(mailAdress1.adress);
+        DigitalSignature digita1Signature1 = (DigitalSignature) o;
+        return signature.equals(digita1Signature1.signature);
     }
     
     @Override
-     public int hashCode() { return adress.hashCode(); }
+     public int hashCode() { return signature.hashCode(); }
     
      @Override
     public String toString() {
-        return "Mail adress{ =" + adress + '\'' + '}';
+        return "Digital signature{ =" + signature + '\'' + '}';
     }
-    
 }
