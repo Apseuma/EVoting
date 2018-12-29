@@ -29,7 +29,7 @@ public class MailAdress {
     
      @Override
     public String toString() {
-        return "Mail adress{ =" + adress + '\'' + '}';
+        return "Mail adress='" + adress + "'";
     }
     
 }
