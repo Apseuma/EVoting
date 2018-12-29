@@ -24,9 +24,10 @@ public class PartyTest {
     
     @Test
     public void TestHashCode(){
-        
-        
-        
+        Party party1 = new Party("PSC");
+        Party party2 = new Party("PSC");
+        assertTrue(party1.hashCode()==party2.hashCode());
+            
     }
     
     @Test

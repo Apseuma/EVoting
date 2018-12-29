@@ -27,6 +27,8 @@ public class MailAdressTest {
         MailAdress adress = new MailAdress("hola@gmail.com");
         MailAdress adress2 = new MailAdress ("hola@gmail.com");
         assertTrue(adress.equals(adress));
+        assertTrue(adress.equals(adress2));
+
     }
     
     @Test
