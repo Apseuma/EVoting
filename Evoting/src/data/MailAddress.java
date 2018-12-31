@@ -9,27 +9,27 @@ package data;
  *
  * @author Albert Planes
  */
-public class MailAdress {
-    private final String adress;
+public class MailAddress {
+    private final String address;
     
-    public MailAdress(String adress) { this.adress = adress; };
+    public MailAddress(String adress) { this.address = adress; };
     
-    public String getAdress() { return adress; };
+    public String getAddress() { return address; };
     
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        MailAdress mailAdress1 = (MailAdress) o;
-        return adress.equals(mailAdress1.adress);
+        MailAddress mailAdress1 = (MailAddress) o;
+        return address.equals(mailAdress1.address);
     }
     
     @Override
-     public int hashCode() { return adress.hashCode(); }
+     public int hashCode() { return address.hashCode(); }
     
      @Override
     public String toString() {
-        return "Mail adress='" + adress + "'";
+        return "Mail address='" + address + "'";
     }
     
 }

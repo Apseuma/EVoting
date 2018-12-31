@@ -17,25 +17,25 @@ public class MailAdressTest {
     
     @Test
     public void TestToString(){
-        MailAdress adress= new MailAdress("ivc44@alumnes.udl.cat");
-        String adress2 = "Mail adress='ivc44@alumnes.udl.cat'";
-        assertEquals(adress2,adress.toString());  
+        MailAddress address= new MailAddress("ivc44@alumnes.udl.cat");
+        String address2 = "Mail address='ivc44@alumnes.udl.cat'";
+        assertEquals(address2,address.toString());  
     }
     
     @Test
     public void TestEquals(){
-        MailAdress adress = new MailAdress("hola@gmail.com");
-        MailAdress adress2 = new MailAdress ("hola@gmail.com");
-        assertTrue(adress.equals(adress));
-        assertTrue(adress.equals(adress2));
+        MailAddress address = new MailAddress("hola@gmail.com");
+        MailAddress address2 = new MailAddress ("hola@gmail.com");
+        assertTrue(address.equals(address));
+        assertTrue(address.equals(address2));
 
     }
     
     @Test
     public void TestHashCode(){
-        MailAdress adress = new MailAdress ("adeu@gmail.com");
-        MailAdress adress2 = new MailAdress ("adeu@gmail.com");
-        assertTrue(adress.hashCode()==adress2.hashCode());
+        MailAddress address = new MailAddress ("adeu@gmail.com");
+        MailAddress address2 = new MailAddress ("adeu@gmail.com");
+        assertTrue(address.hashCode()==address2.hashCode());
     }  
 
 }
