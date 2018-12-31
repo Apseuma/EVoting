@@ -39,29 +39,29 @@ public class VoteCounter {
     }
     
     public void countParty(Party party) { 
-        if(party == null){  //!!!!!
-            countBlank();    
-        }else if(validParties.contains(party)){
-            partyList.add(party);
-        }else{
-            countNull();
-        }
+        partiesWithVotes.put(party.getName(), partiesWithVotes.get(party.getName()) + 1);
     }
     
     public void countNull() { 
-        nullCounter++;
+        partiesWithVotes.put(NULL, partiesWithVotes.get(NULL) + 1);
     }
     
     public void countBlank() { 
-        blankCounter++;
+        partiesWithVotes.put(BLANK, partiesWithVotes.get(BLANK) + 1);
     }
     
     public void scrutinize(Party party) { 
-        //WHAT?   
+        if(party == null){  //!!!!!
+            countBlank();    
+        }else if(validParties.contains(party)){
+           countParty(party);
+        }else{
+            countNull();
+        } 
     }
     
     public int getVotesFor(Party party) throws NullPointerException { 
-       if(party.equals(null)){
+       if(party == null){
            throw new NullPointerException();
        }
        
