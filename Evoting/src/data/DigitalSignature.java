@@ -29,6 +29,6 @@ public class DigitalSignature {
     
      @Override
     public String toString() {
-        return "Digital signature{ =" + signature + '\'' + '}';
+        return "Digital signature='" + signature +  "'";
     }
 }
