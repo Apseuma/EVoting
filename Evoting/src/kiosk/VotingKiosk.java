@@ -17,19 +17,19 @@ import services.MailerService;
  */
 public class VotingKiosk {
     
-    ElectoralOrganism electoralOrganism = new ElectoralOrganism();
-    MailerService mailerService = new MailerService();
+    ElectoralOrganism electoralOrganism = new ElectoralOrganismImplementation();
+    MailerService mailerService = new MailerServiceImplementation();
     
     public VotingKiosk() { 
     
     }
  
     public void setElectoralOrganism(ElectoralOrganism eO) { 
-    
+        electoralOrganism = eO;
     }
  
     public void setMailerService(MailerService mService){ 
-    
+        mailerService = mService;
     }
     
     public void vote(Party party) {
