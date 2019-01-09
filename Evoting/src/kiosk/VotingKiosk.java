@@ -9,7 +9,9 @@ import data.DigitalSignature;
 import data.MailAddress;
 import data.Party;
 import services.ElectoralOrganism;
+import services.ElectoralOrganismImplementation;
 import services.MailerService;
+import services.MailerServiceImplementation;
 
 /**
  *
@@ -20,8 +22,11 @@ public class VotingKiosk {
     ElectoralOrganism electoralOrganism = new ElectoralOrganismImplementation();
     MailerService mailerService = new MailerServiceImplementation();
     
-    public VotingKiosk() { 
+    VoteCounter voteCounter;
+    Party currentParty;
     
+    public VotingKiosk(VoteCounter vC) { 
+        voteCounter = vC;
     }
  
     public void setElectoralOrganism(ElectoralOrganism eO) { 
@@ -33,11 +38,12 @@ public class VotingKiosk {
     }
     
     public void vote(Party party) {
-        scrutinize(party);
+        voteCounter.scrutinize(party);
+        currentParty = party;
     }
  
     public void sendeReceipt(MailAddress address) { 
-        DigitalSignature signature = electoralOrganism.askForDigitalSignature(party);
+        DigitalSignature signature = electoralOrganism.askForDigitalSignature(currentParty);
         mailerService.send(address, signature);
     }
 }

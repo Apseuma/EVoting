@@ -13,7 +13,7 @@ import data.Party;
  *
  * @author Albert Planes
  */
-public class ElecoralOrganismImplementation implements ElectoralOrganism{
+public class ElectoralOrganismImplementation implements ElectoralOrganism{
 
     public boolean abledVoter = true;
     
