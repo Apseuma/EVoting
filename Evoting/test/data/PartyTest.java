@@ -11,7 +11,8 @@ package data;
  */
 import static junit.framework.Assert.assertEquals;
 import static junit.framework.Assert.assertTrue;
-import org.junit.Test;  
+//import org.junit.Test;
+import org.junit.jupiter.api.Test;  //JUNIT 5
 
 public class PartyTest {
        
