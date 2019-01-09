@@ -51,7 +51,7 @@ public class VoteCounter {
     }
     
     public void scrutinize(Party party) { 
-        if(party == null){  //!!!!!
+        if(party == null){  //!!!!! 
             countBlank();    
         }else if(validParties.contains(party)){
            countParty(party);

@@ -30,6 +30,6 @@ final public class Nif {
     
     @Override
     public String toString() {
-        return "NIF= " + nif + ".";
+        return "NIF='" + nif + "' ";
     }
 }
