@@ -6,7 +6,6 @@
 package kiosk;
 
 import data.Party;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Set;
@@ -22,11 +21,8 @@ public class VoteCounter {
    
     HashMap<String, Integer> partiesWithVotes = new HashMap<>();
    
-    ArrayList<Party> partyList = new ArrayList<>();
     HashSet<Party> validParties = new HashSet<>();
     
-    int nullCounter = 0;
-    int blankCounter = 0;
     
     public VoteCounter(Set<Party> validParties) { 
         this.validParties = (HashSet<Party>) validParties; //!!!!
