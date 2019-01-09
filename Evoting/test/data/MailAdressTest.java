@@ -19,8 +19,8 @@ public class MailAdressTest {
     @Test
     public void TestToString(){
         MailAddress address= new MailAddress("ivc44@alumnes.udl.cat");
-        String address2 = "Mail address='ivc44@alumnes.udl.cat'";
-        assertEquals(address2,address.toString());  
+        String expected = "Mail address='ivc44@alumnes.udl.cat'";
+        assertEquals(expected,address.toString());  
     }
     
     @Test

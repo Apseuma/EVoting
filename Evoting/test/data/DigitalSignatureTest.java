@@ -18,8 +18,8 @@ public class DigitalSignatureTest {
      @Test
     public void TestToString(){
         DigitalSignature signature= new DigitalSignature("IVCSIGNATURE");
-        String signature2 = "Digital signature='IVCSIGNATURE'";
-        assertEquals(signature2,signature.toString());  
+        String expected = "Digital signature='IVCSIGNATURE'";
+        assertEquals(expected,signature.toString());  
     }
     
     @Test
