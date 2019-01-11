@@ -1,8 +1,9 @@
 package data;
 
-import static junit.framework.Assert.assertEquals;
-import static junit.framework.Assert.assertFalse;
-import static junit.framework.Assert.assertTrue;
+//import static junit.framework.Assert.assertEquals;
+//import static junit.framework.Assert.assertTrue;
+import static org.junit.jupiter.api.Assertions.*;
+
 //import org.junit.Test;
 import org.junit.jupiter.api.Test;  //JUNIT 5
 

@@ -5,36 +5,48 @@
  */
 package data;
 
-import static junit.framework.Assert.assertEquals;
-import static junit.framework.Assert.assertTrue;
+//import static junit.framework.Assert.assertEquals;
+//import static junit.framework.Assert.assertTrue;
+import org.junit.jupiter.api.BeforeEach;
 //import org.junit.Test;
 import org.junit.jupiter.api.Test;  //JUNIT 5
+//import static org.junit.Assert.*;
+import org.junit.jupiter.api.*;
+import org.junit.jupiter.engine.*;
+import static org.junit.jupiter.api.Assertions.*;
 
-/**
+/**helloo
  *
  * @author mique
  */
 public class DigitalSignatureTest {
-     @Test
-    public void TestToString(){
-        DigitalSignature signature= new DigitalSignature("IVCSIGNATURE");
+    
+    private DigitalSignature signature;
+    private DigitalSignature same;
+    
+    @BeforeEach
+    void initDigitalSignature(){
+        signature=new DigitalSignature("IVCSIGNATURE");
+        same = new DigitalSignature("IVCSIGNATURE");
+        int prova;
+
+    }
+   
+    @Test
+    void TestToString(){
         String expected = "Digital signature='IVCSIGNATURE'";
-        assertEquals(expected,signature.toString());  
+        assertEquals(expected,signature.toString());
     }
     
     @Test
-    public void TestEquals(){
-        DigitalSignature signature = new DigitalSignature("ANOTHERSIGNATURE");
-        DigitalSignature signature2 = new DigitalSignature ("ANOTHERSIGNATURE");
-        assertTrue(signature.equals(signature));
-        assertTrue(signature.equals(signature2));
+    void TestEquals(){
+        assertTrue(same.equals(signature));
+        assertTrue(same.equals(same));
 
     }
     
     @Test
-    public void TestHashCode(){
-        DigitalSignature signature = new DigitalSignature ("LASTSIGNATURE");
-        DigitalSignature signature2 = new DigitalSignature ("LASTSIGNATURE");
-        assertTrue(signature.hashCode()==signature2.hashCode());
+    void TestHashCode(){
+        assertTrue(signature.hashCode()==same.hashCode());
     }  
 }

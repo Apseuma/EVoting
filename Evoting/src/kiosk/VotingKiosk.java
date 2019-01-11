@@ -23,7 +23,7 @@ public class VotingKiosk {
     MailerService mailerService = new MailerServiceImplementation();
     
     VoteCounter voteCounter;
-    Party currentParty;
+    Party currentParty; // revisar aixo
     
     public VotingKiosk(VoteCounter vC) { 
         voteCounter = vC;

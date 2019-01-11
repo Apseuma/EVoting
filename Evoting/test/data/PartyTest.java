@@ -9,8 +9,11 @@ package data;
  *
  * @author mique
  */
-import static junit.framework.Assert.assertEquals;
-import static junit.framework.Assert.assertTrue;
+//import static junit.framework.Assert.assertEquals;
+//import static junit.framework.Assert.assertTrue;
+import org.junit.jupiter.*;
+import static org.junit.jupiter.api.Assertions.*;
+
 //import org.junit.Test;
 import org.junit.jupiter.api.Test;  //JUNIT 5
 

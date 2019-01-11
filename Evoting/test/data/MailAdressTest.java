@@ -5,11 +5,13 @@ package data;
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-import static junit.framework.Assert.assertEquals;
-import static junit.framework.Assert.assertTrue;
+//import static junit.framework.Assert.assertEquals;
+//import static junit.framework.Assert.assertTrue;
+import static org.junit.jupiter.api.Assertions.*;
+
 //import org.junit.Test;
 import org.junit.jupiter.api.Test;  //JUNIT 5
-
+import org.junit.jupiter.api.*;
 /**
  *
  * @author Albert Planes
