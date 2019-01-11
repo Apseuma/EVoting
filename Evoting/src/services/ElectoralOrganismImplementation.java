@@ -19,16 +19,18 @@ public class ElectoralOrganismImplementation implements ElectoralOrganism{
     
     @Override
     public boolean canVote(Nif nif) {
-        return true;
+        throw new UnsupportedOperationException();
     }
 
+    private boolean disableVoterExecuted=false;
+
     @Override
-    public void disableVoter(Nif nif) {
-       abledVoter = false;
+    public void disableVoter(Nif nif){
+        disableVoterExecuted=true;
     }
 
     @Override
     public DigitalSignature askForDigitalSignature(Party party) {
-        return new DigitalSignature(String.format("This voter has voted: %s", party.getName()));
+        throw new UnsupportedOperationException();
     }
 }
