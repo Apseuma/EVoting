@@ -18,7 +18,7 @@ public class ElectoralOrganismImplementation implements ElectoralOrganism{
     public boolean abledVoter = true;
     
     @Override
-    public boolean canVote(Nif nif) {
+    public boolean canVote(Nif nif) throws NoAvailableEOException {
         throw new UnsupportedOperationException();
     }
 

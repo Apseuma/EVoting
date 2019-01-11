@@ -14,7 +14,7 @@ import data.Party;
  * @author Albert Planes
  */
 public interface ElectoralOrganism {
-    boolean canVote(Nif nif);
-    void disableVoter(Nif nif);
-    DigitalSignature askForDigitalSignature(Party party);
+    boolean canVote(Nif nif) throws NoAvailableEOException ;
+    void disableVoter(Nif nif)throws NoAvailableEOException;
+    DigitalSignature askForDigitalSignature(Party party)throws NoAvailableEOException, NoAvailableSignatureException;
 }
