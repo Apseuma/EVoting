@@ -15,22 +15,37 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Evoting/test/data/DigitalSignatureTest.java">
+        <entry file="file://$PROJECT_DIR$/Evoting/src/data/MailAddress.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
+              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Evoting/src/services/ElectoralOrganism.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Evoting/test/data/MailAdressTest.java">
+        <entry file="file://$PROJECT_DIR$/Evoting/src/kiosk/VotingKiosk.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="14" column="3" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="70">
+              <caret line="22" column="75" selection-start-line="22" selection-start-column="75" selection-end-line="22" selection-end-column="75" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Evoting/src/kiosk/VoteCounter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-153">
+              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -45,6 +60,7 @@
       <list>
         <option value="$PROJECT_DIR$/Evoting/test/data/DigitalSignatureTest.java" />
         <option value="$PROJECT_DIR$/Evoting/test/data/MailAdressTest.java" />
+        <option value="$PROJECT_DIR$/Evoting/src/kiosk/VotingKiosk.java" />
       </list>
     </option>
   </component>
@@ -66,6 +82,29 @@
             <path>
               <item name="EVoting" type="b2602c69:ProjectViewProjectNode" />
               <item name="Evoting" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EVoting" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Evoting" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EVoting" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Evoting" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EVoting" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Evoting" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="kiosk" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EVoting" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Evoting" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="EVoting" type="b2602c69:ProjectViewProjectNode" />
@@ -93,7 +132,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547237109041" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547240644982" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Libraries" />
@@ -159,7 +198,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1547234256895</updated>
-      <workItem from="1547234261693" duration="2703000" />
+      <workItem from="1547234261693" duration="3995000" />
     </task>
     <servers />
   </component>
@@ -173,12 +212,18 @@
     <history-entry file="DigitalSignatureTest - 2019.01.11 at 20h 38m 31s.xml">
       <configuration name="DigitalSignatureTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="MailAdressTest - 2019.01.11 at 21h 04m 12s.xml">
+      <configuration name="MailAdressTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MailAdressTest - 2019.01.11 at 21h 52m 31s.xml">
+      <configuration name="MailAdressTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2703000" />
+    <option name="totallyTimeSpent" value="3995000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Image Layers" />
@@ -225,11 +270,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Evoting/test/data/MailAdressTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="14" column="3" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+        <state relative-caret-position="323">
+          <caret line="31" column="9" lean-forward="true" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Evoting/src/kiosk/VoteCounter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-153">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Evoting/src/data/MailAddress.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Evoting/src/services/ElectoralOrganism.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Evoting/src/kiosk/VotingKiosk.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="70">
+          <caret line="22" column="75" selection-start-line="22" selection-start-column="75" selection-end-line="22" selection-end-column="75" />
         </state>
       </provider>
     </entry>

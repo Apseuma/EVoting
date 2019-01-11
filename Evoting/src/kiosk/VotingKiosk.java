@@ -19,8 +19,8 @@ import services.MailerServiceImplementation;
  */
 public class VotingKiosk {
     
-    ElectoralOrganism electoralOrganism = new ElectoralOrganismImplementation();
-    MailerService mailerService = new MailerServiceImplementation();
+    ElectoralOrganism electoralOrganism = new ElectoralOrganismImplementation();//nose si aqui ho hauriem de inicilitzar.
+    MailerService mailerService = new MailerServiceImplementation(); //idem
     
     VoteCounter voteCounter;
     Party currentParty; // revisar aixo
@@ -31,6 +31,7 @@ public class VotingKiosk {
  
     public void setElectoralOrganism(ElectoralOrganism eO) { 
         electoralOrganism = eO;
+
     }
  
     public void setMailerService(MailerService mService){ 

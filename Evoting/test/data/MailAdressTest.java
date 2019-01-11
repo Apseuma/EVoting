@@ -7,6 +7,8 @@ package data;
  */
 //import static junit.framework.Assert.assertEquals;
 //import static junit.framework.Assert.assertTrue;
+
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -20,6 +22,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 public class MailAdressTest {
     
     @Test
+    @DisplayName("Test de toString del MailAdress")
     public void TestToString(){
         MailAddress address= new MailAddress("ivc44@alumnes.udl.cat");
         String expected = "Mail address='ivc44@alumnes.udl.cat'";
