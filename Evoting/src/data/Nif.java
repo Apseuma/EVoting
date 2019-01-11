@@ -5,6 +5,8 @@
  */
 package data;
 
+import Exceptions.NullReceivedAsParameterException;
+
 /**
  *
  * @author mique
@@ -13,9 +15,11 @@ final public class Nif {
     
     private final String nif;
  
-    public Nif(String nif) {
+    public Nif(String nif) throws NullReceivedAsParameterException {
 
-      //  if(nif==null) throw new NullException;
+        if(nif == null){
+            throw new NullReceivedAsParameterException("Null party received.");
+        }
 
         this.nif = nif;
     }

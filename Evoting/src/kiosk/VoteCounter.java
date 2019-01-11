@@ -5,6 +5,7 @@
  */
 package kiosk;
 
+import Exceptions.NullReceivedAsParameterException;
 import data.Party;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -56,9 +57,9 @@ public class VoteCounter {
         } 
     }
     
-    public int getVotesFor(Party party) throws NullPointerException { 
+    public int getVotesFor(Party party) throws NullReceivedAsParameterException {
        if(party == null){
-           throw new NullPointerException();
+           throw new NullReceivedAsParameterException("Null party received.");
        }
        
         return partiesWithVotes.get(party.getName());

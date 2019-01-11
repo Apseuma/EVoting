@@ -6,6 +6,8 @@ package data;
  * and open the template in the editor.
  */
 
+import Exceptions.NullReceivedAsParameterException;
+
 /**
  *
  * @author Albert Planes
@@ -14,7 +16,14 @@ final public class Party {
  
     private final String name;
  
-    public Party(String name) { this.name = name; }
+    public Party(String name) throws NullReceivedAsParameterException {
+
+        if(name == null){
+            throw new NullReceivedAsParameterException("Null party received.");
+        }
+
+        this.name = name;
+    }
     
     public String getName() { return name; }
 

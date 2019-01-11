@@ -5,6 +5,8 @@
  */
 package data;
 
+import Exceptions.NullReceivedAsParameterException;
+
 /**
  *
  * @author Albert Planes
@@ -12,7 +14,11 @@ package data;
 public class DigitalSignature {
     private final String signature;
     
-    public DigitalSignature(String signature) { this.signature = signature; };
+    public DigitalSignature(String signature) throws NullReceivedAsParameterException{
+        if(signature == null){
+            throw new NullReceivedAsParameterException("Null party received.");
+        }
+        this.signature = signature; };
     
     public String getSignature() { return signature; };
     

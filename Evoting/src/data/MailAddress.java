@@ -5,6 +5,8 @@
  */
 package data;
 
+import Exceptions.NullReceivedAsParameterException;
+
 /**
  *
  * @author Albert Planes
@@ -12,7 +14,13 @@ package data;
 public class MailAddress {
     private final String address;
     
-    public MailAddress(String adress) { this.address = adress; };
+    public MailAddress(String adress) throws NullReceivedAsParameterException {
+
+        if(adress == null){
+            throw new NullReceivedAsParameterException("Null party received.");
+        }
+
+        this.address = adress; };
     
     public String getAddress() { return address; };
     
