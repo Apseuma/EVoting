@@ -7,11 +7,12 @@ package data;
  */
 //import static junit.framework.Assert.assertEquals;
 //import static junit.framework.Assert.assertTrue;
-import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 //import org.junit.Test;
-import org.junit.jupiter.api.Test;  //JUNIT 5
-import org.junit.jupiter.api.*;
 /**
  *
  * @author Albert Planes
