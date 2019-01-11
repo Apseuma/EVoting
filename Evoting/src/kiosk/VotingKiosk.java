@@ -19,8 +19,8 @@ import services.MailerServiceImplementation;
  */
 public class VotingKiosk {
     
-    ElectoralOrganism electoralOrganism = new ElectoralOrganismImplementation();//nose si aqui ho hauriem de inicilitzar.
-    MailerService mailerService = new MailerServiceImplementation(); //idem
+    ElectoralOrganism electoralOrganism;
+    MailerService mailerService; 
     
     VoteCounter voteCounter;
     Party currentParty; // revisar aixo
