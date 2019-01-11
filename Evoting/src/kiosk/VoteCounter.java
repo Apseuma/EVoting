@@ -21,7 +21,7 @@ public class VoteCounter {
    
     HashMap<String, Integer> partiesWithVotes = new HashMap<>();
    
-    HashSet<Party> validParties = new HashSet<>();
+    HashSet<Party> validParties;
     
     
     public VoteCounter(Set<Party> validParties) { 

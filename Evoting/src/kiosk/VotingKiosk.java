@@ -9,9 +9,7 @@ import data.DigitalSignature;
 import data.MailAddress;
 import data.Party;
 import services.ElectoralOrganism;
-import services.ElectoralOrganismImplementation;
 import services.MailerService;
-import services.MailerServiceImplementation;
 
 /**
  *
@@ -19,20 +17,17 @@ import services.MailerServiceImplementation;
  */
 public class VotingKiosk {
     
-    ElectoralOrganism electoralOrganism = new ElectoralOrganismImplementation();//nose si aqui ho hauriem de inicilitzar.
-    MailerService mailerService = new MailerServiceImplementation(); //idem
-    
+    ElectoralOrganism electoralOrganism;
+    MailerService mailerService;
     VoteCounter voteCounter;
-    Party currentParty; // revisar aixo
+
+    Party currentParty; // Això s'eliminaria al finalitzar la sessió de vot
     
-    public VotingKiosk(VoteCounter vC) { 
+    public VotingKiosk(VoteCounter vC) {
         voteCounter = vC;
     }
  
-    public void setElectoralOrganism(ElectoralOrganism eO) { 
-        electoralOrganism = eO;
-
-    }
+    public void setElectoralOrganism(ElectoralOrganism eO) { electoralOrganism = eO; }
  
     public void setMailerService(MailerService mService){ 
         mailerService = mService;
@@ -47,4 +42,5 @@ public class VotingKiosk {
         DigitalSignature signature = electoralOrganism.askForDigitalSignature(currentParty);
         mailerService.send(address, signature);
     }
+
 }
