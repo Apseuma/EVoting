@@ -5,6 +5,7 @@
  */
 package services;
 
+import Exceptions.NoAvailableMailerServiceException;
 import data.DigitalSignature;
 import data.MailAddress;
 
@@ -13,5 +14,5 @@ import data.MailAddress;
  * @author Albert Planes
  */
 public interface MailerService {
-    void send(MailAddress address, DigitalSignature signature);
+    void send(MailAddress address, DigitalSignature signature) throws NoAvailableMailerServiceException;
 }

@@ -5,6 +5,7 @@
  */
 package services;
 
+import Exceptions.NoAvailableMailerServiceException;
 import data.DigitalSignature;
 import data.MailAddress;
 
@@ -17,7 +18,7 @@ public class MailerServiceImplementation implements MailerService{
     public boolean sent = false;
     
     @Override
-    public void send(MailAddress address, DigitalSignature signature) {
+    public void send(MailAddress address, DigitalSignature signature) throws NoAvailableMailerServiceException {
         sent = true;
     }
 

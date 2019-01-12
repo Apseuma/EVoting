@@ -4,10 +4,12 @@ import Exceptions.NoAvailableEOException;
 import Exceptions.NoAvailableMailerServiceException;
 import Exceptions.NoAvailableSignatureException;
 import data.DigitalSignature;
+import data.MailAddress;
 import data.Nif;
 import data.Party;
 import org.junit.jupiter.api.BeforeAll;
 import services.ElectoralOrganismImplementation;
+import services.MailerServiceImplementation;
 
 
 public class VotingKioskTest {
@@ -51,10 +53,10 @@ public class VotingKioskTest {
 
     }
 
-    private static class NoAvailableMailerService extends MailerServiceImplementation{
+    private static class NoAvailableMailerService extends MailerServiceImplementation {
         @Override
-        public void send(MailAddress address, DigitalSignature signature) {
-            throw new NoAvailableMailerServiceException();
+        public void send(MailAddress address, DigitalSignature signature) throws NoAvailableMailerServiceException {
+            throw new NoAvailableMailerServiceException("Servidor de correu no disponible");
         }
 
 
