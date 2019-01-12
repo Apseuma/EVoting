@@ -19,7 +19,7 @@ final public class Party {
     public Party(String name) throws NullReceivedAsParameterException {
 
         if(name == null){
-            throw new NullReceivedAsParameterException("Null party received.");
+            throw new NullReceivedAsParameterException("Null Party received.");
         }
 
         this.name = name;

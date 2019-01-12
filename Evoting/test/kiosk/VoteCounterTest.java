@@ -48,7 +48,6 @@ public class VoteCounterTest {
         assertEquals(2,counter.getVotesFor(new Party("PP")));
         assertEquals(2,counter.getNulls());
         assertEquals(1,counter.getBlanks());
-
-
+        
     }
 }

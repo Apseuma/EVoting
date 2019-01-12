@@ -18,7 +18,7 @@ final public class Nif {
     public Nif(String nif) throws NullReceivedAsParameterException {
 
         if(nif == null){
-            throw new NullReceivedAsParameterException("Null party received.");
+            throw new NullReceivedAsParameterException("Null Nif received.");
         }
 
         this.nif = nif;

@@ -16,7 +16,7 @@ public class DigitalSignature {
     
     public DigitalSignature(String signature) throws NullReceivedAsParameterException{
         if(signature == null){
-            throw new NullReceivedAsParameterException("Null party received.");
+            throw new NullReceivedAsParameterException("Null DigitalSignature received.");
         }
         this.signature = signature; };
     
