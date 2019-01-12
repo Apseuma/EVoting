@@ -5,9 +5,8 @@
  */
 package kiosk;
 
-import data.DigitalSignature;
-import data.MailAddress;
-import data.Party;
+import data.*;
+
 import services.ElectoralOrganism;
 import services.MailerService;
 
@@ -21,26 +20,37 @@ public class VotingKiosk {
     MailerService mailerService;
     VoteCounter voteCounter;
 
-    Party currentParty; // Això s'eliminaria al finalitzar la sessió de vot
-    
-    public VotingKiosk(VoteCounter vC) {
-        voteCounter = vC;
-    }
- 
+    private Party currentParty; // Això s'eliminaria al finalitzar la sessió de vot
+    private Nif currentVoter;
+
+    public VotingKiosk() { }
+
+    public void setCurrentVoter(Nif nif){currentVoter=nif; }
+    public Nif getCurrentVoter(){return currentVoter; }
+
     public void setElectoralOrganism(ElectoralOrganism eO) { electoralOrganism = eO; }
- 
+    public void setVoteCounter(VoteCounter vC){voteCounter=vC; }
     public void setMailerService(MailerService mService){ 
         mailerService = mService;
     }
     
     public void vote(Party party) {
-        voteCounter.scrutinize(party);
-        currentParty = party;
+        if (electoralOrganism.canVote(currentVoter)){
+            voteCounter.scrutinize(party);
+            currentParty = party;
+        } else{
+            endSession();
+        }
+
     }
  
     public void sendeReceipt(MailAddress address) { 
         DigitalSignature signature = electoralOrganism.askForDigitalSignature(currentParty);
         mailerService.send(address, signature);
+    }
+
+    public void endSession(){
+        currentParty=null;
     }
 
 }

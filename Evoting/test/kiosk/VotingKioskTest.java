@@ -4,6 +4,7 @@ import data.DigitalSignature;
 import data.MailAddress;
 import data.Nif;
 import data.Party;
+import org.junit.jupiter.api.BeforeAll;
 import services.ElectoralOrganismImplementation;
 import services.MailerServiceImplementation;
 
@@ -49,13 +50,19 @@ public class VotingKioskTest {
 
     }
 
-
-
     private static class NoAvailableMailerService extends MailerServiceImplementation{
         @Override
         public void send(MailAddress address, DigitalSignature signature) {
             throw new NoAvailableMailerServiceException();
         }
+
+
+    }
+
+
+    @BeforeAll
+    public void setup(){
+        VotingKiosk kiosk=new VotingKiosk();
     }
 
 }
