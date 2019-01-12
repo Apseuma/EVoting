@@ -35,7 +35,8 @@ public class VotingKiosk {
     public void setMailerService(MailerService mService){ 
         mailerService = mService;
     }
-    
+
+
     public void vote(Party party) throws NoAvailableEOException, NullReceivedAsParameterException {
         if (electoralOrganism.canVote(currentVoter)){
             voteCounter.scrutinize(party);

@@ -3,32 +3,41 @@ package kiosk;
 import Exceptions.NoAvailableEOException;
 import Exceptions.NoAvailableMailerServiceException;
 import Exceptions.NoAvailableSignatureException;
+import Exceptions.NullReceivedAsParameterException;
 import data.DigitalSignature;
 import data.MailAddress;
 import data.Nif;
 import data.Party;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
+import services.ElectoralOrganism;
 import services.ElectoralOrganismImplementation;
+import services.MailerService;
 import services.MailerServiceImplementation;
+
+import java.util.Arrays;
+import java.util.HashSet;
+
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 
 public class VotingKioskTest {
 
-    private static abstract class NotValidVoter extends ElectoralOrganismImplementation {
+    private static class NotValidVoter extends ElectoralOrganismImplementation {
         @Override
         public boolean canVote(Nif nif) {
             return false;
         }
     }
 
-    private static abstract class ValidVoter extends ElectoralOrganismImplementation{
+    private static class ValidVoter extends ElectoralOrganismImplementation{
         @Override
         public boolean canVote (Nif nif){
             return true;
         }
     }
 
-    private static abstract class NoAvailableEO extends ElectoralOrganismImplementation{
+    private static class NoAvailableEO extends ElectoralOrganismImplementation{
         @Override
         public boolean canVote(Nif nif) throws NoAvailableEOException {
             throw new NoAvailableEOException("Organisme electoral no disponible");
@@ -45,7 +54,7 @@ public class VotingKioskTest {
         }
     }
 
-    private static abstract class NoAvailableSignature extends ValidVoter{
+    private static class NoAvailableSignature extends ValidVoter{
         @Override
         public DigitalSignature askForDigitalSignature(Party party) throws Exception {
             throw new NoAvailableSignatureException("Signatura digital no disponible");
@@ -62,10 +71,51 @@ public class VotingKioskTest {
 
     }
 
+    VotingKiosk kiosk;
 
     @BeforeAll
-    public void setup(){
-         VotingKiosk kiosk=new VotingKiosk();
+    public void setUp() throws NullReceivedAsParameterException {
+        kiosk=new VotingKiosk();
+        HashSet<Party> votables = new HashSet<>(Arrays.asList(new Party("PP"), new Party("PSOE"),
+                new Party("Podemos"), new Party("Cs"), new Party("ERC")));
+
+        kiosk.setVoteCounter(new VoteCounter(votables));
+        kiosk.setCurrentVoter(new Nif("48054733E"));
     }
+
+    /* En aquest Test es comprova que s'intenta votar però el votant no és vàlid, i es finalitza la sessió de vot* / */
+    @Test
+    void NoValidUserTest() throws NullReceivedAsParameterException, NoAvailableEOException {
+        ElectoralOrganism eo = new NotValidVoter();
+        MailerService mail = new MailerServiceImplementation();
+
+        kiosk.setElectoralOrganism(eo);
+        kiosk.setMailerService(mail);
+
+        kiosk.vote(new Party("ERC"));
+
+
+    }
+
+    @Test
+    void NotAvailableEOTest() throws NullReceivedAsParameterException, NoAvailableEOException {
+        ElectoralOrganism eo = new NoAvailableEO();
+        MailerService mail = new MailerServiceImplementation();
+
+        kiosk.setElectoralOrganism(eo);
+        kiosk.setMailerService(mail);
+
+        assertThrows(NoAvailableEOException.class,
+                ()->{
+         //           kiosk.vote(new Party("whatever"));
+                    kiosk.electoralOrganism.canVote(new Nif ("fghjkghjk"));
+                });
+
+
+
+
+
+    }
+
 
 }
