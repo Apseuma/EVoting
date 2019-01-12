@@ -3,12 +3,10 @@ package kiosk;
 import Exceptions.NoAvailableEOException;
 import Exceptions.NoAvailableSignatureException;
 import data.DigitalSignature;
-import data.MailAddress;
 import data.Nif;
 import data.Party;
 import org.junit.jupiter.api.BeforeAll;
 import services.ElectoralOrganismImplementation;
-import services.MailerServiceImplementation;
 
 
 public class VotingKioskTest {
@@ -30,24 +28,24 @@ public class VotingKioskTest {
     private static abstract class NoAvailableEO extends ElectoralOrganismImplementation{
         @Override
         public boolean canVote(Nif nif) throws NoAvailableEOException {
-            throw new NoAvailableEOException;
+            throw new NoAvailableEOException("Organisme electoral no disponible");
         }
 
         @Override
-        public void disableVoter(Nif nif){
-            throw new NoAvailableEOException();
+        public void disableVoter(Nif nif) throws NoAvailableEOException {
+            throw new NoAvailableEOException("Organisme electoral no disponible");
         }
 
         @Override
-        public DigitalSignature askForDigitalSignature(Party party) {
-            throw new NoAvailableEOException();
+        public DigitalSignature askForDigitalSignature(Party party) throws NoAvailableEOException {
+            throw new NoAvailableEOException("Organisme electoral no disponible");
         }
     }
 
     private static abstract class NoAvailableSignature extends ValidVoter{
         @Override
         public DigitalSignature askForDigitalSignature(Party party) throws Exception {
-            throw new NoAvailableSignatureException;
+            throw new NoAvailableSignatureException("Signatura digital no disponible");
         }
 
     }

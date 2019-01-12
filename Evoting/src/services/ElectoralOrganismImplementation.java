@@ -26,7 +26,7 @@ public class ElectoralOrganismImplementation implements ElectoralOrganism{
     private boolean disableVoterExecuted=false;
 
     @Override
-    public void disableVoter(Nif nif){
+    public void disableVoter(Nif nif) throws NoAvailableEOException {
         disableVoterExecuted=true;
     }
 
