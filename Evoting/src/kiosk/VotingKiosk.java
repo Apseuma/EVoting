@@ -6,6 +6,7 @@
 package kiosk;
 
 import Exceptions.NoAvailableEOException;
+import Exceptions.NullReceivedAsParameterException;
 import data.*;
 
 import services.ElectoralOrganism;
@@ -35,14 +36,13 @@ public class VotingKiosk {
         mailerService = mService;
     }
     
-    public void vote(Party party) throws NoAvailableEOException {
+    public void vote(Party party) throws NoAvailableEOException, NullReceivedAsParameterException {
         if (electoralOrganism.canVote(currentVoter)){
             voteCounter.scrutinize(party);
             currentParty = party;
         } else{
             endSession();
         }
-
     }
  
     public void sendeReceipt(MailAddress address) throws Exception {
@@ -50,8 +50,9 @@ public class VotingKiosk {
         mailerService.send(address, signature);
     }
 
-    public void endSession(){
+    public void endSession() throws NullReceivedAsParameterException, NoAvailableEOException {
         currentParty=null;
+        electoralOrganism.disableVoter(new Nif(currentVoter.getNif())); // !!!!!
     }
 
 }
