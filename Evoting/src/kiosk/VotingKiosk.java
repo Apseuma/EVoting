@@ -48,6 +48,7 @@ public class VotingKiosk {
     public void sendeReceipt(MailAddress address) throws Exception {
         DigitalSignature signature = electoralOrganism.askForDigitalSignature(currentParty);
         mailerService.send(address, signature);
+        endSession();
     }
 
     public void endSession(){

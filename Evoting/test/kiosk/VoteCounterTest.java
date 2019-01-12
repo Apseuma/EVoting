@@ -3,7 +3,7 @@ package kiosk;
 
 import Exceptions.NullReceivedAsParameterException;
 import data.Party;
-import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
@@ -15,9 +15,9 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class VoteCounterTest {
 
     private VoteCounter counter;
-    Set<Party> votables;
+    private Set<Party> votables;
 
-    @BeforeAll
+    @BeforeEach
     public void SetUp() throws NullReceivedAsParameterException {
         votables= new HashSet<>(Arrays.asList(new Party ("PP"),new Party ("PSOE"),
                   new Party ("Podemos"),new Party ("Cs"),new Party ("ERC")));
@@ -42,7 +42,7 @@ public class VoteCounterTest {
         counter.scrutinize(new Party("PP"));
         counter.scrutinize(new Party("partit inventat"));
         counter.scrutinize(new Party("un altre partit inventat"));
-        counter.scrutinize(new Party("BLANK"));
+        counter.scrutinize(new Party("blank"));
 
         assertEquals(1,counter.getVotesFor(new Party("ERC")));
         assertEquals(2,counter.getVotesFor(new Party("PP")));
