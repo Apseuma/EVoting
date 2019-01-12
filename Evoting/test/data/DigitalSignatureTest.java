@@ -7,12 +7,16 @@ package data;
 
 //import static junit.framework.Assert.assertEquals;
 //import static junit.framework.Assert.assertTrue;
+import Exceptions.NullReceivedAsParameterException;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
+import java.security.Signature;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+import static org.junit.jupiter.api.Assertions.assertThrows;
 //import org.junit.Test;
 //import static org.junit.Assert.*;
 
@@ -26,11 +30,9 @@ public class DigitalSignatureTest {
     private DigitalSignature same;
     
     @BeforeEach
-    void initDigitalSignature(){
+    void initDigitalSignature() throws NullReceivedAsParameterException {
         signature=new DigitalSignature("IVCSIGNATURE");
         same = new DigitalSignature("IVCSIGNATURE");
-        int prova;
-
     }
    
     @Test
@@ -49,5 +51,13 @@ public class DigitalSignatureTest {
     @Test
     void TestHashCode(){
         assertTrue(signature.hashCode()==same.hashCode());
-    }  
+    }
+
+    @Test
+    public void exceptionTest() {
+        assertThrows(NullReceivedAsParameterException.class,
+                ()->{
+                    DigitalSignature s = new DigitalSignature(null);
+                });
+    }
 }
