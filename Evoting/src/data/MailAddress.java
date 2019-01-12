@@ -17,7 +17,7 @@ public class MailAddress {
     public MailAddress(String adress) throws NullReceivedAsParameterException {
 
         if(adress == null){
-            throw new NullReceivedAsParameterException("Null party received.");
+            throw new NullReceivedAsParameterException("Null MailAdress received.");
         }
 
         this.address = adress; };

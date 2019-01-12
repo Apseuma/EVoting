@@ -9,6 +9,7 @@ import org.junit.jupiter.api.Test;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class VoteCounterTest {
 
@@ -25,11 +26,11 @@ public class VoteCounterTest {
 
     @Test
     void InitCounterToZero() throws NullReceivedAsParameterException{
-        Assert.equals(0,counter.getVotesFor(new Party("PP")));
-        Assert.equals(0,counter.getVotesFor(new Party("ERC")));
-        Assert.equals(0,counter.getVotesFor(new Party("Podemos")));
-        Assert.equals(0,counter.getBlanks());
-        Assert.equals(0,counter.getNulls());
+        assertEquals(0,counter.getVotesFor(new Party("PP")));
+        assertEquals(0,counter.getVotesFor(new Party("ERC")));
+        assertEquals(0,counter.getVotesFor(new Party("Podemos")));
+        assertEquals(0,counter.getBlanks());
+        assertEquals(0,counter.getNulls());
 
     }
 }

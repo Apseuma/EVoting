@@ -5,6 +5,8 @@
  */
 package services;
 
+import Exceptions.NoAvailableEOException;
+import Exceptions.NoAvailableSignatureException;
 import data.DigitalSignature;
 import data.Nif;
 import data.Party;
@@ -14,7 +16,7 @@ import data.Party;
  * @author Albert Planes
  */
 public interface ElectoralOrganism {
-    boolean canVote(Nif nif) throws NoAvailableEOException ;
+    boolean canVote(Nif nif) throws NoAvailableEOException;
     void disableVoter(Nif nif)throws NoAvailableEOException;
     DigitalSignature askForDigitalSignature(Party party)throws NoAvailableEOException, NoAvailableSignatureException;
 }
