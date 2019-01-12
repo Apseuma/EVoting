@@ -1,6 +1,7 @@
 package kiosk;
 
 import Exceptions.NoAvailableEOException;
+import Exceptions.NoAvailableMailerServiceException;
 import Exceptions.NoAvailableSignatureException;
 import data.DigitalSignature;
 import data.MailAddress;
@@ -52,7 +53,7 @@ public class VotingKioskTest {
 
     }
 
- /*   private static class NoAvailableMailerService extends MailerServiceImplementation{
+    private static class NoAvailableMailerService extends MailerServiceImplementation{
         @Override
         public void send(MailAddress address, DigitalSignature signature) {
             throw new NoAvailableMailerServiceException();
@@ -60,7 +61,7 @@ public class VotingKioskTest {
 
 
     }
-*/
+
 
     @BeforeAll
     public void setup(){
