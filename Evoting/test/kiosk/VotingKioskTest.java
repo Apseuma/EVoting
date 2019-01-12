@@ -1,5 +1,7 @@
 package kiosk;
 
+import Exceptions.NoAvailableEOException;
+import Exceptions.NoAvailableSignatureException;
 import data.DigitalSignature;
 import data.MailAddress;
 import data.Nif;
@@ -28,7 +30,7 @@ public class VotingKioskTest {
     private static abstract class NoAvailableEO extends ElectoralOrganismImplementation{
         @Override
         public boolean canVote(Nif nif) throws NoAvailableEOException {
-            throw new NoAvailableEOException();
+            throw new NoAvailableEOException;
         }
 
         @Override
@@ -44,13 +46,13 @@ public class VotingKioskTest {
 
     private static abstract class NoAvailableSignature extends ValidVoter{
         @Override
-        DigitalSignature askForDigitalSignature(Party party)throws NoAvailableEOException, NoAvailableSignatureException{
-            throw new NoAvailableSignatureException();
+        public DigitalSignature askForDigitalSignature(Party party) throws Exception {
+            throw new NoAvailableSignatureException;
         }
 
     }
 
-    private static class NoAvailableMailerService extends MailerServiceImplementation{
+ /*   private static class NoAvailableMailerService extends MailerServiceImplementation{
         @Override
         public void send(MailAddress address, DigitalSignature signature) {
             throw new NoAvailableMailerServiceException();
@@ -58,11 +60,11 @@ public class VotingKioskTest {
 
 
     }
-
+*/
 
     @BeforeAll
     public void setup(){
-        VotingKiosk kiosk=new VotingKiosk();
+         VotingKiosk kiosk=new VotingKiosk();
     }
 
 }

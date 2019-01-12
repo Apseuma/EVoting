@@ -5,6 +5,7 @@
  */
 package kiosk;
 
+import Exceptions.NoAvailableEOException;
 import data.*;
 
 import services.ElectoralOrganism;
@@ -34,7 +35,7 @@ public class VotingKiosk {
         mailerService = mService;
     }
     
-    public void vote(Party party) {
+    public void vote(Party party) throws NoAvailableEOException {
         if (electoralOrganism.canVote(currentVoter)){
             voteCounter.scrutinize(party);
             currentParty = party;
@@ -44,7 +45,7 @@ public class VotingKiosk {
 
     }
  
-    public void sendeReceipt(MailAddress address) { 
+    public void sendeReceipt(MailAddress address) throws Exception {
         DigitalSignature signature = electoralOrganism.askForDigitalSignature(currentParty);
         mailerService.send(address, signature);
     }

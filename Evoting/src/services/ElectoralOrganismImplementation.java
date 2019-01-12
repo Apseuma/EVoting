@@ -5,6 +5,7 @@
  */
 package services;
 
+import Exceptions.NoAvailableEOException;
 import data.DigitalSignature;
 import data.Nif;
 import data.Party;
@@ -30,7 +31,7 @@ public class ElectoralOrganismImplementation implements ElectoralOrganism{
     }
 
     @Override
-    public DigitalSignature askForDigitalSignature(Party party) {
+    public DigitalSignature askForDigitalSignature(Party party) throws Exception {
         throw new UnsupportedOperationException();
     }
 }

@@ -18,5 +18,5 @@ import data.Party;
 public interface ElectoralOrganism {
     boolean canVote(Nif nif) throws NoAvailableEOException;
     void disableVoter(Nif nif)throws NoAvailableEOException;
-    DigitalSignature askForDigitalSignature(Party party)throws NoAvailableEOException, NoAvailableSignatureException;
+    DigitalSignature askForDigitalSignature(Party party)throws NoAvailableEOException, NoAvailableSignatureException, Exception;
 }
