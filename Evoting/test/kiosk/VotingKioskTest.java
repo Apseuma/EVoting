@@ -8,7 +8,7 @@ import data.DigitalSignature;
 import data.MailAddress;
 import data.Nif;
 import data.Party;
-import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import services.ElectoralOrganism;
 import services.ElectoralOrganismImplementation;
@@ -18,19 +18,20 @@ import services.MailerServiceImplementation;
 import java.util.Arrays;
 import java.util.HashSet;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 
 public class VotingKioskTest {
 
-    private static class NotValidVoter extends ElectoralOrganismImplementation {
+    private static class NotValidVoterEO extends ElectoralOrganismImplementation {
         @Override
         public boolean canVote(Nif nif) {
             return false;
         }
     }
 
-    private static class ValidVoter extends ElectoralOrganismImplementation{
+    private static class ValidVoterEO extends ElectoralOrganismImplementation{
         @Override
         public boolean canVote (Nif nif){
             return true;
@@ -54,7 +55,7 @@ public class VotingKioskTest {
         }
     }
 
-    private static class NoAvailableSignature extends ValidVoter{
+    private static class NoAvailableSignature extends ValidVoterEO{
         @Override
         public DigitalSignature askForDigitalSignature(Party party) throws Exception {
             throw new NoAvailableSignatureException("Signatura digital no disponible");
@@ -73,7 +74,7 @@ public class VotingKioskTest {
 
     VotingKiosk kiosk;
 
-    @BeforeAll
+    @BeforeEach
     public void setUp() throws NullReceivedAsParameterException {
         kiosk=new VotingKiosk();
         HashSet<Party> votables = new HashSet<>(Arrays.asList(new Party("PP"), new Party("PSOE"),
@@ -83,16 +84,21 @@ public class VotingKioskTest {
         kiosk.setCurrentVoter(new Nif("48054733E"));
     }
 
-    /* En aquest Test es comprova que s'intenta votar però el votant no és vàlid, i es finalitza la sessió de vot* / */
+    /* En aquest Test es comprova que s'intenta votar però el votant no és vàlid, i es finalitza la sessió de vot */
     @Test
     void NoValidUserTest() throws NullReceivedAsParameterException, NoAvailableEOException {
-        ElectoralOrganism eo = new NotValidVoter();
+        ElectoralOrganism eo = new NotValidVoterEO();
         MailerService mail = new MailerServiceImplementation();
 
         kiosk.setElectoralOrganism(eo);
         kiosk.setMailerService(mail);
 
         kiosk.vote(new Party("ERC"));
+
+        assertEquals(0,kiosk.voteCounter.getTotal());
+        assertEquals(0,kiosk.voteCounter.getVotesFor(new Party("ERC")));
+
+      //  kiosk.electoralOrganism.disableVoterExecuted;
 
 
     }

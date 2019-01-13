@@ -16,14 +16,18 @@ import data.Party;
  */
 public class ElectoralOrganismImplementation implements ElectoralOrganism{
 
-    public boolean abledVoter = true;
-    
+
+    public boolean disableVoterExecuted;
+
+    public ElectoralOrganismImplementation() {
+        disableVoterExecuted = false;
+    }
+
     @Override
     public boolean canVote(Nif nif) throws NoAvailableEOException {
         throw new UnsupportedOperationException();
     }
 
-    private boolean disableVoterExecuted=false;
 
     @Override
     public void disableVoter(Nif nif) throws NoAvailableEOException {
