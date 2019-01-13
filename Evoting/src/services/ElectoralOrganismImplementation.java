@@ -32,6 +32,6 @@ public class ElectoralOrganismImplementation implements ElectoralOrganism{
 
     @Override
     public DigitalSignature askForDigitalSignature(Party party) throws Exception {
-        throw new UnsupportedOperationException();
+         return new DigitalSignature("firma");
     }
 }
