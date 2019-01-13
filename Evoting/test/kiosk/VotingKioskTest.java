@@ -1,9 +1,6 @@
 package kiosk;
 
-import Exceptions.NoAvailableEOException;
-import Exceptions.NoAvailableMailerServiceException;
-import Exceptions.NoAvailableSignatureException;
-import Exceptions.NullReceivedAsParameterException;
+import Exceptions.*;
 import data.DigitalSignature;
 import data.MailAddress;
 import data.Nif;
@@ -85,7 +82,7 @@ public class VotingKioskTest {
     }
 
     @Test
-    void NoValidUserTest() throws NullReceivedAsParameterException, NoAvailableEOException {
+    void NoValidUserTest() throws NullReceivedAsParameterException, NoAvailableEOException, NotExistingPartyException {
         ElectoralOrganism eo = new NotValidVoterEO();
         MailerService mail = new MailerServiceImplementation();
 
@@ -115,7 +112,7 @@ public class VotingKioskTest {
     }
 
     @Test
-    void ValidUserVotesAcceptedPartyTest() throws NullReceivedAsParameterException, NoAvailableEOException {
+    void ValidUserVotesAcceptedPartyTest() throws NullReceivedAsParameterException, NoAvailableEOException, NotExistingPartyException {
         ElectoralOrganism eo = new ValidVoterEO();
         MailerService mail = new MailerServiceImplementation();
 

@@ -5,6 +5,7 @@
  */
 package kiosk;
 
+import Exceptions.NotExistingPartyException;
 import Exceptions.NullReceivedAsParameterException;
 import data.Party;
 import java.util.HashMap;
@@ -57,11 +58,11 @@ public class VoteCounter {
         } 
     }
     
-    public int getVotesFor(Party party) throws NullReceivedAsParameterException {
-       if(party == null){
-           throw new NullReceivedAsParameterException("Null party received.");
-       }
-       
+    public int getVotesFor(Party party) throws NotExistingPartyException {
+        boolean isValid = validParties.contains(party);
+        if(!isValid) {
+            throw new NotExistingPartyException("Null party received.");
+        }
         return partiesWithVotes.get(party.getName());
     }
     

@@ -1,6 +1,7 @@
 package kiosk;
 
 
+import Exceptions.NotExistingPartyException;
 import Exceptions.NullReceivedAsParameterException;
 import data.Party;
 import org.junit.jupiter.api.BeforeEach;
@@ -11,6 +12,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class VoteCounterTest {
 
@@ -26,7 +28,7 @@ public class VoteCounterTest {
     }
 
     @Test
-    void InitCounterToZero() throws NullReceivedAsParameterException{
+    void InitCounterToZero() throws NullReceivedAsParameterException, NotExistingPartyException {
         assertEquals(0,counter.getVotesFor(new Party("PP")));
         assertEquals(0,counter.getVotesFor(new Party("ERC")));
         assertEquals(0,counter.getVotesFor(new Party("Podemos")));
@@ -36,7 +38,7 @@ public class VoteCounterTest {
     }
 
     @Test
-    void CorrectScrutinize() throws NullReceivedAsParameterException {
+    void CorrectScrutinize() throws NullReceivedAsParameterException, NotExistingPartyException {
         counter.scrutinize(new Party("ERC"));
         counter.scrutinize(new Party("PP"));
         counter.scrutinize(new Party("PP"));
@@ -48,6 +50,13 @@ public class VoteCounterTest {
         assertEquals(2,counter.getVotesFor(new Party("PP")));
         assertEquals(2,counter.getNulls());
         assertEquals(1,counter.getBlanks());
+    }
 
+    @Test
+    public void exceptionTest() {
+        assertThrows(NotExistingPartyException.class,
+                ()->{
+                    counter.getVotesFor(new Party("Partit Frankenstein"));
+                });
     }
 }
