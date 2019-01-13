@@ -84,7 +84,6 @@ public class VotingKioskTest {
         kiosk.setCurrentVoter(new Nif("48054733E"));
     }
 
-    /* En aquest Test es comprova que s'intenta votar però el votant no és vàlid, i es finalitza la sessió de vot */
     @Test
     void NoValidUserTest() throws NullReceivedAsParameterException, NoAvailableEOException {
         ElectoralOrganism eo = new NotValidVoterEO();
@@ -113,8 +112,6 @@ public class VotingKioskTest {
         assertEquals(1,kiosk.voteCounter.getTotal());
         assertEquals(1,kiosk.voteCounter.getNulls());
 
-     //   assertThrows(     ,         assertEquals(0,kiosk.voteCounter.getVotesFor(new Party("partit inventat")));
-)
     }
 
     @Test
@@ -132,7 +129,7 @@ public class VotingKioskTest {
     }
 
     @Test
-    void NotAvailableEOTest() throws NullReceivedAsParameterException, NoAvailableEOException {
+    void NotAvailableEOVotingTest() throws NullReceivedAsParameterException, NoAvailableEOException {
         ElectoralOrganism eo = new NoAvailableEO();
         MailerService mail = new MailerServiceImplementation();
 
@@ -141,14 +138,14 @@ public class VotingKioskTest {
 
         assertThrows(NoAvailableEOException.class,
                 ()->{
-                    kiosk.electoralOrganism.canVote(new Nif ("fghjkghjk"));
+                    kiosk.vote(new Party("PP"));
                 });
 
-
-
-
+        assertThrows(NoAvailableEOException.class,
+                ()->{
+                    kiosk.vote(new Party("inventat"));
+                });
 
     }
-
 
 }
