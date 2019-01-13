@@ -24,6 +24,7 @@ public class VotingKiosk {
 
     private Party currentParty; // Això s'eliminaria al finalitzar la sessió de vot
     private Nif currentVoter;
+    private boolean canVote;
 
     public VotingKiosk() { }
 
@@ -38,6 +39,7 @@ public class VotingKiosk {
     
     public void vote(Party party) throws NoAvailableEOException, NullReceivedAsParameterException {
         if (electoralOrganism.canVote(currentVoter)){
+            canVote = true;
             voteCounter.scrutinize(party);
             currentParty = party;
         } else{
@@ -52,8 +54,9 @@ public class VotingKiosk {
     }
 
     public void endSession() throws NullReceivedAsParameterException, NoAvailableEOException {
-        currentParty=null;
-        electoralOrganism.disableVoter(new Nif(currentVoter.getNif())); // !!!!!
+        currentParty = null;
+        if (canVote) {
+            electoralOrganism.disableVoter(new Nif(currentVoter.getNif())); // !!!!!
+        }
     }
-
 }
