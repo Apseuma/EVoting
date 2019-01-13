@@ -111,7 +111,7 @@ public class VotingKioskTest {
 
         kiosk.vote(new Party("PSOE"));
 
-        assertTrue(kiosk.electoralOrganism.getSpyDisableVoter());
+        assertTrue(((ValidVoterEO) eo).disableVoterExecuted);
 
     }
 

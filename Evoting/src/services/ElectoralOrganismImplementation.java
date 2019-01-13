@@ -26,11 +26,6 @@ public class ElectoralOrganismImplementation implements ElectoralOrganism{
     }
 
     @Override
-    public boolean getSpyDisableVoter(){
-        return disableVoterExecuted;
-    }
-
-    @Override
     public void disableVoter(Nif nif) throws NoAvailableEOException {
         disableVoterExecuted=true;
     }
