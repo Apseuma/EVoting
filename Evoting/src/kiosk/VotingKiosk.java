@@ -7,11 +7,12 @@ package kiosk;
 
 import Exceptions.NoAvailableEOException;
 import Exceptions.NullReceivedAsParameterException;
-import data.*;
-
-import services.ElectoralOrganism;
+import data.DigitalSignature;
+import data.MailAddress;
+import data.Nif;
+import data.Party;
 import services.ElectoralOrganismImplementation;
-import services.MailerService;
+import services.MailerServiceImplementation;
 
 /**
  *
@@ -20,7 +21,7 @@ import services.MailerService;
 public class VotingKiosk {
     
     ElectoralOrganismImplementation electoralOrganism;
-    MailerService mailerService;
+    MailerServiceImplementation mailerService;
     VoteCounter voteCounter;
 
     public Party currentParty; // Això s'eliminaria al finalitzar la sessió de vot
@@ -34,7 +35,7 @@ public class VotingKiosk {
 
     public void setElectoralOrganism(ElectoralOrganismImplementation eO) { electoralOrganism = eO; }
     public void setVoteCounter(VoteCounter vC){voteCounter=vC; }
-    public void setMailerService(MailerService mService){ 
+    public void setMailerService(MailerServiceImplementation mService){
         mailerService = mService;
     }
 
