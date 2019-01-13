@@ -40,9 +40,9 @@ public class VotingKiosk {
 
     public void vote(Party party) throws NoAvailableEOException, NullReceivedAsParameterException {
         if (electoralOrganism.canVote(currentVoter)){
-            canVote = true;
             voteCounter.scrutinize(party);
             currentParty = party;
+            electoralOrganism.disableVoter(currentVoter);
         } else{
             endSession();
         }
@@ -56,8 +56,7 @@ public class VotingKiosk {
 
     public void endSession() throws NullReceivedAsParameterException, NoAvailableEOException {
         currentParty = null;
-        if (canVote) {
-            electoralOrganism.disableVoter(new Nif(currentVoter.getNif())); // !!!!!
-        }
+        currentVoter = null;
+
     }
 }

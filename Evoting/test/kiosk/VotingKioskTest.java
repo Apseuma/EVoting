@@ -15,8 +15,7 @@ import services.MailerServiceImplementation;
 import java.util.Arrays;
 import java.util.HashSet;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.*;
 
 
 public class VotingKioskTest {
@@ -33,6 +32,12 @@ public class VotingKioskTest {
         public boolean canVote (Nif nif){
             return true;
         }
+ /*       public boolean disableVoterExecuted;
+        @Override
+        public void disableVoter(Nif nif) throws NoAvailableEOException {
+            disableVoterExecuted=true;
+        }
+*/
     }
 
     private static class NoAvailableEO extends ElectoralOrganismImplementation{
@@ -93,6 +98,20 @@ public class VotingKioskTest {
 
         assertEquals(0,kiosk.voteCounter.getTotal());
         assertEquals(0,kiosk.voteCounter.getVotesFor(new Party("ERC")));
+
+    }
+
+    @Test
+    void DisableVoterAfterTest() throws NullReceivedAsParameterException, NoAvailableEOException {
+        ElectoralOrganism eo = new ValidVoterEO();
+        MailerService mail = new MailerServiceImplementation();
+
+        kiosk.setElectoralOrganism(eo);
+        kiosk.setMailerService(mail);
+
+        kiosk.vote(new Party("PSOE"));
+
+        assertTrue(kiosk.electoralOrganism.getSpyDisableVoter());
 
     }
 
