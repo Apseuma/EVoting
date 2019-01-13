@@ -99,14 +99,7 @@ public class VotingKioskTest {
     }
 
     @Test
-<<<<<<< HEAD
-<<<<<<< HEAD
-    void disableVoterAfterTest() throws NullReceivedAsParameterException, NoAvailableEOException {
-=======
-=======
->>>>>>> bcddd8619923a3e03d1aadae3d11b38f4c9e433d
     void DisableVoterAfterTest() throws NullReceivedAsParameterException, NoAvailableEOException {
->>>>>>> bcddd8619923a3e03d1aadae3d11b38f4c9e433d
         ElectoralOrganismImplementation eo = new ValidVoterEO();
         MailerService mail = new MailerServiceImplementation();
 

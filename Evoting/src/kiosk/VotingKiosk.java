@@ -12,6 +12,7 @@ import data.*;
 import services.ElectoralOrganism;
 import services.ElectoralOrganismImplementation;
 import services.MailerService;
+import services.MailerServiceImplementation;
 
 /**
  *
