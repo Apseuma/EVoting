@@ -2,6 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fb909e49-1758-4b2f-b1d1-e243f369a373" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Evoting/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Evoting/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Evoting/out/production/Evoting/services/ElectoralOrganismImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/Evoting/out/production/Evoting/services/ElectoralOrganismImplementation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Evoting/out/test/Evoting/kiosk/VotingKioskTest$NoAvailableEO.class" beforeDir="false" afterPath="$PROJECT_DIR$/Evoting/out/test/Evoting/kiosk/VotingKioskTest$NoAvailableEO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Evoting/out/test/Evoting/kiosk/VotingKioskTest$NoAvailableMailerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/Evoting/out/test/Evoting/kiosk/VotingKioskTest$NoAvailableMailerService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Evoting/out/test/Evoting/kiosk/VotingKioskTest$NoAvailableSignature.class" beforeDir="false" afterPath="$PROJECT_DIR$/Evoting/out/test/Evoting/kiosk/VotingKioskTest$NoAvailableSignature.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Evoting/out/test/Evoting/kiosk/VotingKioskTest$NotValidVoterEO.class" beforeDir="false" afterPath="$PROJECT_DIR$/Evoting/out/test/Evoting/kiosk/VotingKioskTest$NotValidVoterEO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Evoting/out/test/Evoting/kiosk/VotingKioskTest$ValidVoterEO.class" beforeDir="false" afterPath="$PROJECT_DIR$/Evoting/out/test/Evoting/kiosk/VotingKioskTest$ValidVoterEO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Evoting/out/test/Evoting/kiosk/VotingKioskTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/Evoting/out/test/Evoting/kiosk/VotingKioskTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Evoting/src/kiosk/VotingKiosk.java" beforeDir="false" afterPath="$PROJECT_DIR$/Evoting/src/kiosk/VotingKiosk.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Evoting/test/kiosk/VotingKioskTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Evoting/test/kiosk/VotingKioskTest.java" afterDir="false" />
     </list>
@@ -17,11 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Evoting/test/kiosk/VotingKioskTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="377">
-              <caret line="147" column="39" lean-forward="true" selection-start-line="147" selection-start-column="39" selection-end-line="147" selection-end-column="39" />
+            <state relative-caret-position="901">
+              <caret line="125" selection-start-line="125" selection-end-line="125" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="class#NotValidVoterEO#0;class#VotingKioskTest#0" />
@@ -32,7 +40,6 @@
                 <element signature="method#NoValidUserTest#0;class#VotingKioskTest#0" />
                 <element signature="method#DisableVoterAfterTest#0;class#VotingKioskTest#0" />
                 <element signature="method#ValidUserVotesUnacceptedPartyTest#0;class#VotingKioskTest#0" />
-                <element signature="method#ValidUserVotesAcceptedPartyTest#0;class#VotingKioskTest#0" />
                 <element signature="method#notAvailableDigitalSignatureSendeReceipt#0;class#VotingKioskTest#0" />
                 <element signature="method#notAvailableMailerServiceSendeReceiptTest#0;class#VotingKioskTest#0" />
                 <element signature="method#OKSendeReceipt#0;class#VotingKioskTest#0" />
@@ -53,11 +60,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Evoting/src/kiosk/VotingKiosk.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+            <state relative-caret-position="170">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
             </state>
           </provider>
         </entry>
@@ -94,8 +101,8 @@
         <option value="$PROJECT_DIR$/Evoting/src/kiosk/VoteCounter.java" />
         <option value="$PROJECT_DIR$/Evoting/src/services/ElectoralOrganism.java" />
         <option value="$PROJECT_DIR$/Evoting/src/services/ElectoralOrganismImplementation.java" />
-        <option value="$PROJECT_DIR$/Evoting/src/kiosk/VotingKiosk.java" />
         <option value="$PROJECT_DIR$/Evoting/test/kiosk/VotingKioskTest.java" />
+        <option value="$PROJECT_DIR$/Evoting/src/kiosk/VotingKiosk.java" />
       </list>
     </option>
   </component>
@@ -179,7 +186,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547401878454" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547402080402" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -295,17 +302,11 @@
       <updated>1547234256895</updated>
       <workItem from="1547234261693" duration="16905000" />
       <workItem from="1547293458454" duration="11043000" />
-      <workItem from="1547397642161" duration="3331000" />
+      <workItem from="1547397642161" duration="3545000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="VotingKioskTest - 2019.01.13 at 13h 38m 04s.xml">
-      <configuration name="VotingKioskTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="VotingKioskTest - 2019.01.13 at 13h 54m 19s.xml">
-      <configuration name="VotingKioskTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="VotingKioskTest - 2019.01.13 at 18h 13m 07s.xml">
       <configuration name="VotingKioskTest" configurationId="JUnit" />
     </history-entry>
@@ -330,9 +331,15 @@
     <history-entry file="VotingKioskTest - 2019.01.13 at 18h 50m 30s.xml">
       <configuration name="VotingKioskTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="VotingKioskTest - 2019.01.13 at 18h 51m 10s.xml">
+      <configuration name="VotingKioskTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="VotingKioskTest - 2019.01.13 at 18h 51m 22s.xml">
+      <configuration name="VotingKioskTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31279000" />
+    <option name="totallyTimeSpent" value="31493000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -544,17 +551,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Evoting/src/kiosk/VotingKiosk.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Evoting/test/kiosk/VotingKioskTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="147" column="39" lean-forward="true" selection-start-line="147" selection-start-column="39" selection-end-line="147" selection-end-column="39" />
+        <state relative-caret-position="901">
+          <caret line="125" selection-start-line="125" selection-end-line="125" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="class#NotValidVoterEO#0;class#VotingKioskTest#0" />
@@ -565,11 +565,17 @@
             <element signature="method#NoValidUserTest#0;class#VotingKioskTest#0" />
             <element signature="method#DisableVoterAfterTest#0;class#VotingKioskTest#0" />
             <element signature="method#ValidUserVotesUnacceptedPartyTest#0;class#VotingKioskTest#0" />
-            <element signature="method#ValidUserVotesAcceptedPartyTest#0;class#VotingKioskTest#0" />
             <element signature="method#notAvailableDigitalSignatureSendeReceipt#0;class#VotingKioskTest#0" />
             <element signature="method#notAvailableMailerServiceSendeReceiptTest#0;class#VotingKioskTest#0" />
             <element signature="method#OKSendeReceipt#0;class#VotingKioskTest#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Evoting/src/kiosk/VotingKiosk.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>

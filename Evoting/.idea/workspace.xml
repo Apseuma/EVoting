@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="09159516-d993-45de-8ba5-02a07d8fbab0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/kiosk/VotingKiosk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kiosk/VotingKiosk.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/kiosk/VotingKioskTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/kiosk/VotingKioskTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -13,17 +14,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/kiosk/VotingKioskTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="91">
-              <caret line="169" column="39" selection-start-line="169" selection-start-column="39" selection-end-line="169" selection-end-column="39" />
+            <state relative-caret-position="3281">
+              <caret line="193" column="19" lean-forward="true" selection-start-line="193" selection-start-column="19" selection-end-line="193" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#642#643#0" expanded="true" />
-                <element signature="e#678#679#0" expanded="true" />
+                <element signature="e#607#608#0" expanded="true" />
+                <element signature="e#643#644#0" expanded="true" />
+                <element signature="e#789#790#0" expanded="true" />
                 <element signature="e#824#825#0" expanded="true" />
-                <element signature="e#859#860#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -68,11 +69,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/kiosk/VotingKiosk.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="367">
-              <caret line="34" column="68" selection-start-line="34" selection-start-column="68" selection-end-line="34" selection-end-column="68" />
+            <state relative-caret-position="163">
+              <caret line="23" column="17" lean-forward="true" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -115,8 +116,8 @@
         <option value="$PROJECT_DIR$/test/kiosk/VoteCounterTest.java" />
         <option value="$PROJECT_DIR$/src/services/ElectoralOrganismImplementation.java" />
         <option value="$PROJECT_DIR$/src/services/ElectoralOrganism.java" />
-        <option value="$PROJECT_DIR$/src/kiosk/VotingKiosk.java" />
         <option value="$PROJECT_DIR$/test/kiosk/VotingKioskTest.java" />
+        <option value="$PROJECT_DIR$/src/kiosk/VotingKiosk.java" />
       </list>
     </option>
   </component>
@@ -198,7 +199,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547400819885" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547401694423" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -317,17 +318,11 @@
       <workItem from="1547252818687" duration="4596000" />
       <workItem from="1547342772967" duration="1555000" />
       <workItem from="1547377555645" duration="6740000" />
-      <workItem from="1547399508866" duration="1276000" />
+      <workItem from="1547399508866" duration="2157000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="DigitalSignatureTest - 2019.01.12 at 01h 15m 46s.xml">
-      <configuration name="DigitalSignatureTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MailAdressTest - 2019.01.12 at 01h 17m 37s.xml">
-      <configuration name="MailAdressTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="NifTest - 2019.01.12 at 01h 18m 41s.xml">
       <configuration name="NifTest" configurationId="JUnit" />
     </history-entry>
@@ -352,9 +347,15 @@
     <history-entry file="VoteCounterTest_exceptionTest - 2019.01.13 at 13h 04m 24s.xml">
       <configuration name="VoteCounterTest.exceptionTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="VotingKioskTest - 2019.01.13 at 18h 33m 29s.xml">
+      <configuration name="VotingKioskTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="VotingKioskTest - 2019.01.13 at 18h 47m 28s.xml">
+      <configuration name="VotingKioskTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19660000" />
+    <option name="totallyTimeSpent" value="20541000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -378,7 +379,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3286119" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3286119" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -388,7 +389,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.3286119" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Messages" order="12" visible="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.3286119" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -554,13 +555,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/kiosk/VotingKiosk.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="34" column="68" selection-start-line="34" selection-start-column="68" selection-end-line="34" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/services/ElectoralOrganismImplementation.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -573,15 +567,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/kiosk/VotingKioskTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="169" column="39" selection-start-line="169" selection-start-column="39" selection-end-line="169" selection-end-column="39" />
+        <state relative-caret-position="3281">
+          <caret line="193" column="19" lean-forward="true" selection-start-line="193" selection-start-column="19" selection-end-line="193" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#642#643#0" expanded="true" />
-            <element signature="e#678#679#0" expanded="true" />
+            <element signature="e#607#608#0" expanded="true" />
+            <element signature="e#643#644#0" expanded="true" />
+            <element signature="e#789#790#0" expanded="true" />
             <element signature="e#824#825#0" expanded="true" />
-            <element signature="e#859#860#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kiosk/VotingKiosk.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="23" column="17" lean-forward="true" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
         </state>
       </provider>
     </entry>
