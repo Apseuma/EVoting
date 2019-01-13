@@ -165,17 +165,18 @@ public class VotingKioskTest {
     }
 
     @Test
-    public void noMailerServiceSendeReciptTest() throws NullReceivedAsParameterException{
+    public void noMailerServiceSendeReciptTest() throws NullReceivedAsParameterException, NoAvailableEOException {
         MailerService mS = new NoAvailableMailerService();
+        ElectoralOrganism eo= new ValidVoterEO();
 
-        VotingKiosk vK = new VotingKiosk();
-        vK.setMailerService(mS);
-        vK.setElectoralOrganism(new ValidVoterEO());
-        vK.currentParty = new Party("ERC");
+        kiosk.setMailerService(mS);
+        kiosk.setElectoralOrganism(eo);
 
-        assertThrows(NoAvailableMailerService.class,
+        kiosk.vote(new Party("Podemos"));
+
+        assertThrows(NoAvailableMailerServiceException.class,
                 ()->{
-                    vK.sendeReceipt(new MailAddress("abc@gmail.com"));
+                    kiosk.sendeReceipt(new MailAddress("abc@gmail.com"));
                 });
     }
 

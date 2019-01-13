@@ -54,7 +54,7 @@ public class VotingKiosk {
         endSession();
     }
 
-    public void endSession() throws NullReceivedAsParameterException, NoAvailableEOException {
+    public void endSession() {
         currentParty = null;
         currentVoter = null;
 
