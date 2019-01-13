@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fb909e49-1758-4b2f-b1d1-e243f369a373" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Evoting/test/kiosk/VotingKioskTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Evoting/test/kiosk/VotingKioskTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -19,20 +20,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Evoting/test/kiosk/VotingKioskTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="447">
-              <caret line="199" column="7" lean-forward="true" selection-start-line="199" selection-start-column="7" selection-end-line="199" selection-end-column="7" />
+            <state relative-caret-position="1654">
+              <caret line="174" lean-forward="true" selection-start-line="174" selection-end-line="174" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="class#NotValidVoterEO#0;class#VotingKioskTest#0" />
                 <element signature="class#ValidVoterEO#0;class#VotingKioskTest#0" />
                 <element signature="class#NoAvailableEO#0;class#VotingKioskTest#0" />
-                <element signature="method#NoValidUserTest#0;class#VotingKioskTest#0" />
-                <element signature="method#DisableVoterAfterTest#0;class#VotingKioskTest#0" />
-                <element signature="method#ValidUserVotesUnacceptedPartyTest#0;class#VotingKioskTest#0" />
-                <element signature="method#ValidUserVotesAcceptedPartyTest#0;class#VotingKioskTest#0" />
-                <element signature="method#NotAvailableEOVotingTest#0;class#VotingKioskTest#0" />
-                <element signature="method#notAvailableDigitalSignatureSendeReceipt#0;class#VotingKioskTest#0" />
-                <element signature="method#noMailerServiceSendeReceiptTest#0;class#VotingKioskTest#0" />
               </folding>
             </state>
           </provider>
@@ -54,7 +48,7 @@
         <entry file="file://$PROJECT_DIR$/Evoting/src/kiosk/VotingKiosk.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="376">
-              <caret line="56" column="30" lean-forward="true" selection-start-line="56" selection-start-column="30" selection-end-line="56" selection-end-column="30" />
+              <caret line="57" column="30" lean-forward="true" selection-start-line="57" selection-start-column="30" selection-end-line="57" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -96,7 +90,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="10" />
     <option name="y" value="20" />
     <option name="width" value="1346" />
@@ -176,7 +170,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547400820638" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547401003206" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -292,7 +286,7 @@
       <updated>1547234256895</updated>
       <workItem from="1547234261693" duration="16905000" />
       <workItem from="1547293458454" duration="11043000" />
-      <workItem from="1547397642161" duration="2285000" />
+      <workItem from="1547397642161" duration="2544000" />
     </task>
     <servers />
   </component>
@@ -329,7 +323,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30233000" />
+    <option name="totallyTimeSpent" value="30492000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -537,7 +531,7 @@
     <entry file="file://$PROJECT_DIR$/Evoting/src/kiosk/VotingKiosk.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="376">
-          <caret line="56" column="30" lean-forward="true" selection-start-line="56" selection-start-column="30" selection-end-line="56" selection-end-column="30" />
+          <caret line="57" column="30" lean-forward="true" selection-start-line="57" selection-start-column="30" selection-end-line="57" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -550,20 +544,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Evoting/test/kiosk/VotingKioskTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="199" column="7" lean-forward="true" selection-start-line="199" selection-start-column="7" selection-end-line="199" selection-end-column="7" />
+        <state relative-caret-position="1654">
+          <caret line="174" lean-forward="true" selection-start-line="174" selection-end-line="174" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="class#NotValidVoterEO#0;class#VotingKioskTest#0" />
             <element signature="class#ValidVoterEO#0;class#VotingKioskTest#0" />
             <element signature="class#NoAvailableEO#0;class#VotingKioskTest#0" />
-            <element signature="method#NoValidUserTest#0;class#VotingKioskTest#0" />
-            <element signature="method#DisableVoterAfterTest#0;class#VotingKioskTest#0" />
-            <element signature="method#ValidUserVotesUnacceptedPartyTest#0;class#VotingKioskTest#0" />
-            <element signature="method#ValidUserVotesAcceptedPartyTest#0;class#VotingKioskTest#0" />
-            <element signature="method#NotAvailableEOVotingTest#0;class#VotingKioskTest#0" />
-            <element signature="method#notAvailableDigitalSignatureSendeReceipt#0;class#VotingKioskTest#0" />
-            <element signature="method#noMailerServiceSendeReceiptTest#0;class#VotingKioskTest#0" />
           </folding>
         </state>
       </provider>

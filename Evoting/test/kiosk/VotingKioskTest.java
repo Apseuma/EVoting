@@ -87,8 +87,6 @@ public class VotingKioskTest {
     }
 
     @Test
-    void noValidUserTest() throws NullReceivedAsParameterException, NoAvailableEOException, NotExistingPartyException {
-        ElectoralOrganism eo = new NotValidVoterEO();
     void NoValidUserTest() throws NullReceivedAsParameterException, NoAvailableEOException, NotExistingPartyException {
         ElectoralOrganismImplementation eo = new NotValidVoterEO();
         MailerService mail = new MailerServiceImplementation();
