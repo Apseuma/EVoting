@@ -2,7 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="09159516-d993-45de-8ba5-02a07d8fbab0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/kiosk/VotingKioskTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/kiosk/VotingKioskTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/Evoting/kiosk/VotingKiosk.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/Evoting/kiosk/VotingKiosk.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/test/Evoting/kiosk/VotingKioskTest$NoAvailableEO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/test/Evoting/kiosk/VotingKioskTest$NoAvailableEO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/test/Evoting/kiosk/VotingKioskTest$NoAvailableMailerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/test/Evoting/kiosk/VotingKioskTest$NoAvailableMailerService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/test/Evoting/kiosk/VotingKioskTest$NoAvailableSignature.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/test/Evoting/kiosk/VotingKioskTest$NoAvailableSignature.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/test/Evoting/kiosk/VotingKioskTest$NotValidVoterEO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/test/Evoting/kiosk/VotingKioskTest$NotValidVoterEO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/test/Evoting/kiosk/VotingKioskTest$ValidVoterEO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/test/Evoting/kiosk/VotingKioskTest$ValidVoterEO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/test/Evoting/kiosk/VotingKioskTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/test/Evoting/kiosk/VotingKioskTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,14 +24,14 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/kiosk/VotingKioskTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="91">
-              <caret line="169" column="39" selection-start-line="169" selection-start-column="39" selection-end-line="169" selection-end-column="39" />
+            <state relative-caret-position="-3">
+              <caret line="136" column="24" lean-forward="true" selection-start-line="136" selection-start-column="24" selection-end-line="136" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#642#643#0" expanded="true" />
-                <element signature="e#678#679#0" expanded="true" />
+                <element signature="e#607#608#0" expanded="true" />
+                <element signature="e#643#644#0" expanded="true" />
+                <element signature="e#789#790#0" expanded="true" />
                 <element signature="e#824#825#0" expanded="true" />
-                <element signature="e#859#860#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -198,7 +206,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547400819885" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547401357088" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -317,14 +325,11 @@
       <workItem from="1547252818687" duration="4596000" />
       <workItem from="1547342772967" duration="1555000" />
       <workItem from="1547377555645" duration="6740000" />
-      <workItem from="1547399508866" duration="1276000" />
+      <workItem from="1547399508866" duration="1835000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="DigitalSignatureTest - 2019.01.12 at 01h 15m 46s.xml">
-      <configuration name="DigitalSignatureTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="MailAdressTest - 2019.01.12 at 01h 17m 37s.xml">
       <configuration name="MailAdressTest" configurationId="JUnit" />
     </history-entry>
@@ -352,9 +357,12 @@
     <history-entry file="VoteCounterTest_exceptionTest - 2019.01.13 at 13h 04m 24s.xml">
       <configuration name="VoteCounterTest.exceptionTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="VotingKioskTest - 2019.01.13 at 18h 33m 29s.xml">
+      <configuration name="VotingKioskTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19660000" />
+    <option name="totallyTimeSpent" value="20219000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -378,7 +386,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3286119" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3286119" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -388,7 +396,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.3286119" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Messages" order="12" visible="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.3286119" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -573,14 +581,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/kiosk/VotingKioskTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="169" column="39" selection-start-line="169" selection-start-column="39" selection-end-line="169" selection-end-column="39" />
+        <state relative-caret-position="-3">
+          <caret line="136" column="24" lean-forward="true" selection-start-line="136" selection-start-column="24" selection-end-line="136" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#642#643#0" expanded="true" />
-            <element signature="e#678#679#0" expanded="true" />
+            <element signature="e#607#608#0" expanded="true" />
+            <element signature="e#643#644#0" expanded="true" />
+            <element signature="e#789#790#0" expanded="true" />
             <element signature="e#824#825#0" expanded="true" />
-            <element signature="e#859#860#0" expanded="true" />
           </folding>
         </state>
       </provider>
