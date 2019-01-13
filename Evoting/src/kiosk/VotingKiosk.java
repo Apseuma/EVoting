@@ -10,6 +10,7 @@ import Exceptions.NullReceivedAsParameterException;
 import data.*;
 
 import services.ElectoralOrganism;
+import services.ElectoralOrganismImplementation;
 import services.MailerService;
 
 /**
@@ -18,7 +19,7 @@ import services.MailerService;
  */
 public class VotingKiosk {
     
-    ElectoralOrganism electoralOrganism;
+    ElectoralOrganismImplementation electoralOrganism;
     MailerService mailerService;
     VoteCounter voteCounter;
 
@@ -31,7 +32,7 @@ public class VotingKiosk {
     public void setCurrentVoter(Nif nif){currentVoter=nif; }
     public Nif getCurrentVoter(){return currentVoter; }
 
-    public void setElectoralOrganism(ElectoralOrganism eO) { electoralOrganism = eO; }
+    public void setElectoralOrganism(ElectoralOrganismImplementation eO) { electoralOrganism = eO; }
     public void setVoteCounter(VoteCounter vC){voteCounter=vC; }
     public void setMailerService(MailerService mService){ 
         mailerService = mService;

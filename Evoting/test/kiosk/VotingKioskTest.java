@@ -89,6 +89,8 @@ public class VotingKioskTest {
     @Test
     void noValidUserTest() throws NullReceivedAsParameterException, NoAvailableEOException, NotExistingPartyException {
         ElectoralOrganism eo = new NotValidVoterEO();
+    void NoValidUserTest() throws NullReceivedAsParameterException, NoAvailableEOException, NotExistingPartyException {
+        ElectoralOrganismImplementation eo = new NotValidVoterEO();
         MailerService mail = new MailerServiceImplementation();
 
         kiosk.setElectoralOrganism(eo);
@@ -104,6 +106,8 @@ public class VotingKioskTest {
     @Test
     void disableVoterAfterTest() throws NullReceivedAsParameterException, NoAvailableEOException {
         ElectoralOrganism eo = new ValidVoterEO();
+    void DisableVoterAfterTest() throws NullReceivedAsParameterException, NoAvailableEOException {
+        ElectoralOrganismImplementation eo = new ValidVoterEO();
         MailerService mail = new MailerServiceImplementation();
 
         kiosk.setElectoralOrganism(eo);
@@ -112,12 +116,15 @@ public class VotingKioskTest {
         kiosk.vote(new Party("PSOE"));
 
         assertTrue(((ValidVoterEO) eo).disableVoterExecuted);  //corregir
+        assertTrue(kiosk.electoralOrganism.disableVoterExecuted);
 
     }
 
     @Test
     void validUserVotesUnacceptedPartyTest() throws NullReceivedAsParameterException, NoAvailableEOException {
         ElectoralOrganism eo = new ValidVoterEO();
+    void ValidUserVotesUnacceptedPartyTest() throws NullReceivedAsParameterException, NoAvailableEOException {
+        ElectoralOrganismImplementation eo = new ValidVoterEO();
         MailerService mail = new MailerServiceImplementation();
 
         kiosk.setElectoralOrganism(eo);
@@ -133,6 +140,8 @@ public class VotingKioskTest {
     @Test
     void validUserVotesAcceptedPartyTest() throws NullReceivedAsParameterException, NoAvailableEOException, NotExistingPartyException {
         ElectoralOrganism eo = new ValidVoterEO();
+    void ValidUserVotesAcceptedPartyTest() throws NullReceivedAsParameterException, NoAvailableEOException, NotExistingPartyException {
+        ElectoralOrganismImplementation eo = new ValidVoterEO();
         MailerService mail = new MailerServiceImplementation();
 
         kiosk.setElectoralOrganism(eo);
@@ -147,6 +156,8 @@ public class VotingKioskTest {
     @Test
     void notAvailableEOVotingTest() throws NullReceivedAsParameterException, NoAvailableEOException {
         ElectoralOrganism eo = new NoAvailableEO();
+    void NotAvailableEOVotingTest() throws NullReceivedAsParameterException, NoAvailableEOException {
+        ElectoralOrganismImplementation eo = new NoAvailableEO();
         MailerService mail = new MailerServiceImplementation();
 
         kiosk.setElectoralOrganism(eo);
@@ -183,7 +194,7 @@ public class VotingKioskTest {
     @Test
     void notAvailableMailerServiceSendeReceiptTest()  throws NullReceivedAsParameterException, NoAvailableEOException {
         MailerService mS = new NoAvailableMailerService();
-        ElectoralOrganism eo= new ValidVoterEO();
+        ElectoralOrganismImplementation eo= new ValidVoterEO();
 
         kiosk.setMailerService(mS);
         kiosk.setElectoralOrganism(eo);
@@ -195,8 +206,5 @@ public class VotingKioskTest {
                     kiosk.sendeReceipt(new MailAddress("abc@gmail.com"));
                 });
     }
-
-    @Test
-    voi
 
 }
