@@ -145,4 +145,19 @@ public class VotingKioskTest {
 
     }
 
+    @Test
+    public void noMailerServiceSendeReciptTest() throws NullReceivedAsParameterException{
+        MailerService mS = new NoAvailableMailerService();
+
+        VotingKiosk vK = new VotingKiosk();
+        vK.setMailerService(mS);
+        vK.setElectoralOrganism(new ValidVoterEO());
+        vK.currentParty = new Party("ERC");
+
+        assertThrows(NoAvailableMailerService.class,
+                ()->{
+                    vK.sendeReceipt(new MailAddress("abc@gmail.com"));
+                });
+    }
+
 }

@@ -22,9 +22,9 @@ public class VotingKiosk {
     MailerService mailerService;
     VoteCounter voteCounter;
 
-    private Party currentParty; // Això s'eliminaria al finalitzar la sessió de vot
+    public Party currentParty; // Això s'eliminaria al finalitzar la sessió de vot
     private Nif currentVoter;
-    private boolean canVote;
+    private boolean canVote; // sempre s'inicialitza abans d'utilitzar-se
 
     public VotingKiosk() { }
 
