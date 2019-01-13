@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="09159516-d993-45de-8ba5-02a07d8fbab0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kiosk/VotingKiosk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kiosk/VotingKiosk.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/kiosk/VotingKioskTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/kiosk/VotingKioskTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -18,8 +16,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/kiosk/VotingKioskTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="90" column="39" selection-start-line="90" selection-start-column="39" selection-end-line="90" selection-end-column="39" />
+            <state relative-caret-position="91">
+              <caret line="169" column="39" selection-start-line="169" selection-start-column="39" selection-end-line="169" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#642#643#0" expanded="true" />
@@ -122,7 +120,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="85" />
     <option name="y" value="25" />
     <option name="width" value="1750" />
@@ -200,7 +198,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547400673399" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547400819885" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -217,7 +215,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.VotingKioskTest.noMailerServiceSendeReciptTest">
+  <component name="RunManager" selected="JUnit.VotingKioskTest">
     <configuration name="Exceptions in Evoting" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Evoting" />
       <extension name="coverage">
@@ -228,21 +226,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="Exceptions" />
       <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PartyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Evoting" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="data.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="data" />
-      <option name="MAIN_CLASS_NAME" value="data.PartyTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -278,6 +261,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="VotingKioskTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Evoting" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="kiosk.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="kiosk" />
+      <option name="MAIN_CLASS_NAME" value="kiosk.VotingKioskTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="VotingKioskTest.noMailerServiceSendeReciptTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Evoting" />
       <extension name="coverage">
@@ -296,11 +294,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.VotingKioskTest" />
         <item itemvalue="JUnit.VotingKioskTest.noMailerServiceSendeReciptTest" />
         <item itemvalue="JUnit.VoteCounterTest.exceptionTest" />
         <item itemvalue="JUnit.VoteCounterTest" />
         <item itemvalue="JUnit.Exceptions in Evoting" />
-        <item itemvalue="JUnit.PartyTest" />
       </list>
     </recent_temporary>
   </component>
@@ -319,7 +317,7 @@
       <workItem from="1547252818687" duration="4596000" />
       <workItem from="1547342772967" duration="1555000" />
       <workItem from="1547377555645" duration="6740000" />
-      <workItem from="1547399508866" duration="1153000" />
+      <workItem from="1547399508866" duration="1276000" />
     </task>
     <servers />
   </component>
@@ -356,7 +354,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19537000" />
+    <option name="totallyTimeSpent" value="19660000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -371,7 +369,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23892617" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23892617" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -390,7 +388,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.3286119" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="12" visible="true" weight="0.3286119" />
+      <window_info active="true" anchor="bottom" id="Messages" order="12" visible="true" weight="0.3286119" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -575,8 +573,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/kiosk/VotingKioskTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="90" column="39" selection-start-line="90" selection-start-column="39" selection-end-line="90" selection-end-column="39" />
+        <state relative-caret-position="91">
+          <caret line="169" column="39" selection-start-line="169" selection-start-column="39" selection-end-line="169" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#642#643#0" expanded="true" />
