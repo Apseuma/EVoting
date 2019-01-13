@@ -3,21 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="fb909e49-1758-4b2f-b1d1-e243f369a373" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Evoting/src/kiosk/VotingKiosk.java" beforeDir="false" afterPath="$PROJECT_DIR$/Evoting/src/kiosk/VotingKiosk.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Evoting/src/services/ElectoralOrganism.java" beforeDir="false" afterPath="$PROJECT_DIR$/Evoting/src/services/ElectoralOrganism.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Evoting/src/services/ElectoralOrganismImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/Evoting/src/services/ElectoralOrganismImplementation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Evoting/test/kiosk/VotingKioskTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Evoting/test/kiosk/VotingKioskTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Evoting/kiosk/VoteCounter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Evoting/kiosk/VoteCounter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Evoting/kiosk/VotingKiosk.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Evoting/kiosk/VotingKiosk.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Evoting/services/ElectoralOrganismImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Evoting/services/ElectoralOrganismImplementation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/Evoting/kiosk/VoteCounterTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/Evoting/kiosk/VoteCounterTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/Evoting/kiosk/VotingKioskTest$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/Evoting/kiosk/VotingKioskTest$NoAvailableEO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/Evoting/kiosk/VotingKioskTest$NoAvailableMailerService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/Evoting/kiosk/VotingKioskTest$NoAvailableSignature.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/Evoting/kiosk/VotingKioskTest$NotValidVoterEO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/Evoting/kiosk/VotingKioskTest$ValidVoterEO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/Evoting/kiosk/VotingKioskTest.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,8 +20,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Evoting/test/kiosk/VotingKioskTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="113" column="65" lean-forward="true" selection-start-line="113" selection-start-column="65" selection-end-line="113" selection-end-column="65" />
+            <state relative-caret-position="345">
+              <caret line="177" column="21" lean-forward="true" selection-start-line="177" selection-start-column="21" selection-end-line="177" selection-end-column="21" />
               <folding>
                 <element signature="class#NotValidVoterEO#0;class#VotingKioskTest#0" />
                 <element signature="e#714#715#0" expanded="true" />
@@ -47,6 +33,7 @@
                 <element signature="class#NoAvailableSignature#0;class#VotingKioskTest#0" />
                 <element signature="class#NoAvailableMailerService#0;class#VotingKioskTest#0" />
                 <element signature="method#NoValidUserTest#0;class#VotingKioskTest#0" />
+                <element signature="method#JustOneTimeVoterTest#0;class#VotingKioskTest#0" />
                 <element signature="method#ValidUserVotesUnacceptedPartyTest#0;class#VotingKioskTest#0" />
                 <element signature="method#ValidUserVotesTest#0;class#VotingKioskTest#0" />
                 <element signature="method#NotAvailableEOVotingTest#0;class#VotingKioskTest#0" />
@@ -59,7 +46,7 @@
         <entry file="file://$PROJECT_DIR$/Evoting/src/services/ElectoralOrganismImplementation.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="357">
-              <caret line="30" column="5" lean-forward="true" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+              <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#700#701#0" expanded="true" />
@@ -82,7 +69,7 @@
         <entry file="file://$PROJECT_DIR$/Evoting/src/kiosk/VotingKiosk.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
-              <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
+              <caret line="40" column="16" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
               <folding>
                 <element signature="e#1050#1051#0" expanded="true" />
                 <element signature="e#1091#1092#0" expanded="true" />
@@ -199,7 +186,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547383078089" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547384053536" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -314,17 +301,11 @@
       <option name="presentableId" value="Default" />
       <updated>1547234256895</updated>
       <workItem from="1547234261693" duration="16905000" />
-      <workItem from="1547293458454" duration="9592000" />
+      <workItem from="1547293458454" duration="10614000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="VotingKioskTest - 2019.01.13 at 12h 31m 20s.xml">
-      <configuration name="VotingKioskTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="VotingKioskTest - 2019.01.13 at 12h 31m 52s.xml">
-      <configuration name="VotingKioskTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="VotingKioskTest - 2019.01.13 at 12h 45m 42s.xml">
       <configuration name="VotingKioskTest" configurationId="JUnit" />
     </history-entry>
@@ -349,15 +330,21 @@
     <history-entry file="VoteCounterTest - 2019.01.13 at 13h 10m 14s.xml">
       <configuration name="VoteCounterTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="VotingKioskTest - 2019.01.13 at 13h 37m 17s.xml">
+      <configuration name="VotingKioskTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="VotingKioskTest - 2019.01.13 at 13h 38m 04s.xml">
+      <configuration name="VotingKioskTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26497000" />
+    <option name="totallyTimeSpent" value="27519000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22239032" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22239032" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -558,17 +545,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Evoting/src/kiosk/VotingKiosk.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
-          <folding>
-            <element signature="e#1050#1051#0" expanded="true" />
-            <element signature="e#1091#1092#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Evoting/src/services/ElectoralOrganism.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -579,7 +555,7 @@
     <entry file="file://$PROJECT_DIR$/Evoting/src/services/ElectoralOrganismImplementation.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
-          <caret line="30" column="5" lean-forward="true" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+          <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#700#701#0" expanded="true" />
@@ -588,10 +564,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Evoting/src/kiosk/VotingKiosk.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="40" column="16" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
+          <folding>
+            <element signature="e#1050#1051#0" expanded="true" />
+            <element signature="e#1091#1092#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Evoting/test/kiosk/VotingKioskTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="113" column="65" lean-forward="true" selection-start-line="113" selection-start-column="65" selection-end-line="113" selection-end-column="65" />
+        <state relative-caret-position="345">
+          <caret line="177" column="21" lean-forward="true" selection-start-line="177" selection-start-column="21" selection-end-line="177" selection-end-column="21" />
           <folding>
             <element signature="class#NotValidVoterEO#0;class#VotingKioskTest#0" />
             <element signature="e#714#715#0" expanded="true" />
@@ -603,6 +590,7 @@
             <element signature="class#NoAvailableSignature#0;class#VotingKioskTest#0" />
             <element signature="class#NoAvailableMailerService#0;class#VotingKioskTest#0" />
             <element signature="method#NoValidUserTest#0;class#VotingKioskTest#0" />
+            <element signature="method#JustOneTimeVoterTest#0;class#VotingKioskTest#0" />
             <element signature="method#ValidUserVotesUnacceptedPartyTest#0;class#VotingKioskTest#0" />
             <element signature="method#ValidUserVotesTest#0;class#VotingKioskTest#0" />
             <element signature="method#NotAvailableEOVotingTest#0;class#VotingKioskTest#0" />
