@@ -98,9 +98,37 @@ public class VotingKioskTest {
         assertEquals(0,kiosk.voteCounter.getTotal());
         assertEquals(0,kiosk.voteCounter.getVotesFor(new Party("ERC")));
 
-      //  kiosk.electoralOrganism.disableVoterExecuted;
+    }
 
+    @Test
+    void ValidUserVotesUnacceptedPartyTest() throws NullReceivedAsParameterException, NoAvailableEOException {
+        ElectoralOrganism eo = new ValidVoterEO();
+        MailerService mail = new MailerServiceImplementation();
 
+        kiosk.setElectoralOrganism(eo);
+        kiosk.setMailerService(mail);
+
+        kiosk.vote(new Party("partit inventat"));
+
+        assertEquals(1,kiosk.voteCounter.getTotal());
+        assertEquals(1,kiosk.voteCounter.getNulls());
+
+     //   assertThrows(     ,         assertEquals(0,kiosk.voteCounter.getVotesFor(new Party("partit inventat")));
+)
+    }
+
+    @Test
+    void ValidUserVotesAcceptedPartyTest() throws NullReceivedAsParameterException, NoAvailableEOException {
+        ElectoralOrganism eo = new ValidVoterEO();
+        MailerService mail = new MailerServiceImplementation();
+
+        kiosk.setElectoralOrganism(eo);
+        kiosk.setMailerService(mail);
+
+        kiosk.vote(new Party("PP"));
+
+        assertEquals(1,kiosk.voteCounter.getTotal());
+        assertEquals(1,kiosk.voteCounter.getVotesFor(new Party("PP")));
     }
 
     @Test
@@ -113,7 +141,6 @@ public class VotingKioskTest {
 
         assertThrows(NoAvailableEOException.class,
                 ()->{
-         //           kiosk.vote(new Party("whatever"));
                     kiosk.electoralOrganism.canVote(new Nif ("fghjkghjk"));
                 });
 
